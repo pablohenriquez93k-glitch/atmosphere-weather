@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "تفاصيل الطقس (كل التأثيرات)"
+    },
+    "Show clouds": {
+        "message": "إظهار السحب"
+    },
+    "Show rain": {
+        "message": "إظهار المطر"
+    },
+    "Show snow": {
+        "message": "إظهار الثلج"
+    },
+    "Show rain that dries up before landing": {
+        "message": "إظهار المطر الذي يتبخر قبل أن يصل إلى الأرض"
+    },
+    "Show lightning in storms *": {
+        "message": "إظهار البرق في العواصف *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "إظهار سحب الرماد البركاني *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "إظهار البرق في الرماد البركاني *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "إظهار الشرارات الكهربائية على الكواكب المعدنية"
+    },
+    "How many clouds": {
+        "message": "عدد السحب"
+    },
+    "How much rain and snow": {
+        "message": "كمية المطر والثلج"
+    },
+    "How many storms have lightning *": {
+        "message": "عدد العواصف التي فيها برق *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "عدد سحب الرماد البركاني *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "كمية البرق في الرماد البركاني *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "عدد الشرارات على الكواكب المعدنية *"
+    },
+    "Show advanced options": {
+        "message": "إظهار الخيارات المتقدمة"
+    },
+    "How fast clouds drift": {
+        "message": "سرعة حركة السحب"
+    },
+    "How often clouds turn into rain": {
+        "message": "عدد مرات تحول السحب إلى مطر"
+    },
+    "How often rain turns into a storm": {
+        "message": "عدد مرات تحول المطر إلى عاصفة"
+    },
+    "How long rain lasts": {
+        "message": "مدة المطر"
+    },
+    "How long clouds last": {
+        "message": "مدة بقاء السحب"
+    },
+    "Effect limit per planet": {
+        "message": "حد التأثيرات لكل كوكب"
+    },
+    "Effect limit for the whole system": {
+        "message": "حد التأثيرات للنظام بأكمله"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "سرعة ظهور سحب ومطر جديدة"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "الثواني بين تحديثات حركة السحب (القيم الأقل قد تسبب تقطعاً)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "كتابة معلومات التشخيص في سجل اللعبة"
+    },
+    "Match game graphics": {
+        "message": "مطابق لرسومات اللعبة"
+    },
+    "Low": {
+        "message": "منخفض"
+    },
+    "Medium": {
+        "message": "متوسط"
+    },
+    "High": {
+        "message": "عالي"
+    },
+    "Extreme": {
+        "message": "أقصى"
+    },
+    "Custom": {
+        "message": "يدوي"
+    },
+    "On": {
+        "message": "تشغيل"
+    },
+    "Off": {
+        "message": "إيقاف"
+    },
+    "Yes": {
+        "message": "نعم"
+    },
+    "No": {
+        "message": "لا"
+    },
+    "Detail": {
+        "message": "التفاصيل"
+    },
+    "Turn effects on or off": {
+        "message": "تشغيل التأثيرات أو إيقافها"
+    },
+    "Detail per effect": {
+        "message": "التفاصيل لكل تأثير"
+    },
+    "Advanced": {
+        "message": "متقدم"
+    },
+    "Weather behavior": {
+        "message": "سلوك الطقس"
+    },
+    "Performance": {
+        "message": "الأداء"
+    },
+    "Troubleshooting": {
+        "message": "استكشاف الأخطاء"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "التفاصيل الأقل تعرض تأثيرات طقس أقل وتعمل بشكل أفضل على الحواسيب الأبطأ. خيار «مطابق لرسومات اللعبة» يستخدم مستوى الإعداد المسبق لجودة الرسومات."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "إيقاف تأثير لا يزيله فوراً: ما هو موجود في السماء يختفي وحده (حتى دقيقتين)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* يسري في مباراتك القادمة."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "الأقصى يعرض 50% أكثر من العالي. إذا تقطعت اللعبة، خفّض التفاصيل."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "تغيير هذه الخيارات قد يعطل التعديل. إذا حدث ذلك، اضغط __button__."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "خطر: القيم الأعلى قد تسبب تقطع اللعبة."
+    },
+    "Warning:": {
+        "message": "تحذير:"
+    },
+    "normal": {
+        "message": "عادي"
+    },
+    "particles": {
+        "message": "جسيم"
+    },
+    "per update": {
+        "message": "لكل تحديث"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "هذه الترجمة مصنوعة بالذكاء الاصطناعي ولم يراجعها متحدث أصلي، لذلك قد تحتوي على أخطاء في الترجمة. يرجى الإبلاغ عنها في صفحة التعديل."
+    }
+}

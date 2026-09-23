@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "Detaily počasí (všechny efekty)"
+    },
+    "Show clouds": {
+        "message": "Zobrazit mraky"
+    },
+    "Show rain": {
+        "message": "Zobrazit déšť"
+    },
+    "Show snow": {
+        "message": "Zobrazit sníh"
+    },
+    "Show rain that dries up before landing": {
+        "message": "Zobrazit déšť, který se vypaří před dopadem"
+    },
+    "Show lightning in storms *": {
+        "message": "Zobrazit blesky v bouřích *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "Zobrazit mraky sopečného popela *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "Zobrazit blesky v sopečném popelu *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "Zobrazit elektrické jiskry na kovových planetách"
+    },
+    "How many clouds": {
+        "message": "Množství mraků"
+    },
+    "How much rain and snow": {
+        "message": "Množství deště a sněhu"
+    },
+    "How many storms have lightning *": {
+        "message": "Kolik bouří má blesky *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "Množství mraků sopečného popela *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "Množství blesků v sopečném popelu *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "Množství jisker na kovových planetách *"
+    },
+    "Show advanced options": {
+        "message": "Zobrazit pokročilé možnosti"
+    },
+    "How fast clouds drift": {
+        "message": "Rychlost pohybu mraků"
+    },
+    "How often clouds turn into rain": {
+        "message": "Jak často z mraků prší"
+    },
+    "How often rain turns into a storm": {
+        "message": "Jak často se déšť změní v bouři"
+    },
+    "How long rain lasts": {
+        "message": "Délka deště"
+    },
+    "How long clouds last": {
+        "message": "Doba trvání mraků"
+    },
+    "Effect limit per planet": {
+        "message": "Limit efektů na planetu"
+    },
+    "Effect limit for the whole system": {
+        "message": "Limit efektů pro celý systém"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "Jak rychle se objevují nové mraky a déšť"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "Sekundy mezi aktualizacemi pohybu mraků (méně může způsobit zasekávání)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "Zapisovat diagnostické informace do protokolu hry"
+    },
+    "Match game graphics": {
+        "message": "Podle grafiky hry"
+    },
+    "Low": {
+        "message": "Nízký"
+    },
+    "Medium": {
+        "message": "Střední"
+    },
+    "High": {
+        "message": "Vysoký"
+    },
+    "Extreme": {
+        "message": "Extrémní"
+    },
+    "Custom": {
+        "message": "Vlastní"
+    },
+    "On": {
+        "message": "Zapnuto"
+    },
+    "Off": {
+        "message": "Vypnuto"
+    },
+    "Yes": {
+        "message": "Ano"
+    },
+    "No": {
+        "message": "Ne"
+    },
+    "Detail": {
+        "message": "Detaily"
+    },
+    "Turn effects on or off": {
+        "message": "Zapnutí a vypnutí efektů"
+    },
+    "Detail per effect": {
+        "message": "Detaily jednotlivých efektů"
+    },
+    "Advanced": {
+        "message": "Pokročilé"
+    },
+    "Weather behavior": {
+        "message": "Chování počasí"
+    },
+    "Performance": {
+        "message": "Výkon"
+    },
+    "Troubleshooting": {
+        "message": "Řešení problémů"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "Nižší detaily zobrazují méně efektů počasí a na slabších počítačích běží lépe. „Podle grafiky hry“ použije úroveň z přednastavení kvality grafiky."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "Vypnutí efektu ho neodstraní hned: co už je na obloze, samo zmizí (až 2 minuty)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* Projeví se v příštím zápase."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "Extrémní zobrazuje o 50 % více než Vysoký. Pokud se hra zasekává, snižte detaily."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "Změna těchto možností může mód rozbít. Pokud se to stane, stiskněte __button__."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "Riskantní: vyšší hodnoty mohou způsobit zasekávání hry."
+    },
+    "Warning:": {
+        "message": "Varování:"
+    },
+    "normal": {
+        "message": "normální"
+    },
+    "particles": {
+        "message": "částic"
+    },
+    "per update": {
+        "message": "za aktualizaci"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "Tento překlad vytvořila AI a nezkontroloval ho rodilý mluvčí, proto může obsahovat chyby v překladu. Nahlaste je prosím na stránce módu."
+    }
+}

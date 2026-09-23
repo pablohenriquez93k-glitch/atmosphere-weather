@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "Szczegółowość pogody (wszystkie efekty)"
+    },
+    "Show clouds": {
+        "message": "Pokazuj chmury"
+    },
+    "Show rain": {
+        "message": "Pokazuj deszcz"
+    },
+    "Show snow": {
+        "message": "Pokazuj śnieg"
+    },
+    "Show rain that dries up before landing": {
+        "message": "Pokazuj deszcz, który paruje przed dotarciem do ziemi"
+    },
+    "Show lightning in storms *": {
+        "message": "Pokazuj błyskawice w burzach *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "Pokazuj chmury popiołu wulkanicznego *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "Pokazuj błyskawice w popiele wulkanicznym *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "Pokazuj iskry elektryczne na metalowych planetach"
+    },
+    "How many clouds": {
+        "message": "Liczba chmur"
+    },
+    "How much rain and snow": {
+        "message": "Ilość deszczu i śniegu"
+    },
+    "How many storms have lightning *": {
+        "message": "Ile burz ma błyskawice *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "Liczba chmur popiołu wulkanicznego *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "Ilość błyskawic w popiele wulkanicznym *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "Liczba iskier na metalowych planetach *"
+    },
+    "Show advanced options": {
+        "message": "Pokaż opcje zaawansowane"
+    },
+    "How fast clouds drift": {
+        "message": "Prędkość przesuwania się chmur"
+    },
+    "How often clouds turn into rain": {
+        "message": "Jak często z chmur pada deszcz"
+    },
+    "How often rain turns into a storm": {
+        "message": "Jak często deszcz zmienia się w burzę"
+    },
+    "How long rain lasts": {
+        "message": "Czas trwania deszczu"
+    },
+    "How long clouds last": {
+        "message": "Czas życia chmur"
+    },
+    "Effect limit per planet": {
+        "message": "Limit efektów na planetę"
+    },
+    "Effect limit for the whole system": {
+        "message": "Limit efektów dla całego systemu"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "Jak szybko pojawiają się nowe chmury i deszcz"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "Sekundy między aktualizacjami ruchu chmur (mniej może powodować przycięcia)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "Zapisuj informacje diagnostyczne w dzienniku gry"
+    },
+    "Match game graphics": {
+        "message": "Jak grafika gry"
+    },
+    "Low": {
+        "message": "Niskie"
+    },
+    "Medium": {
+        "message": "Średnie"
+    },
+    "High": {
+        "message": "Wysokie"
+    },
+    "Extreme": {
+        "message": "Ekstremalne"
+    },
+    "Custom": {
+        "message": "Własne"
+    },
+    "On": {
+        "message": "Wł."
+    },
+    "Off": {
+        "message": "Wył."
+    },
+    "Yes": {
+        "message": "Tak"
+    },
+    "No": {
+        "message": "Nie"
+    },
+    "Detail": {
+        "message": "Szczegółowość"
+    },
+    "Turn effects on or off": {
+        "message": "Włączanie i wyłączanie efektów"
+    },
+    "Detail per effect": {
+        "message": "Szczegółowość efektów"
+    },
+    "Advanced": {
+        "message": "Zaawansowane"
+    },
+    "Weather behavior": {
+        "message": "Zachowanie pogody"
+    },
+    "Performance": {
+        "message": "Wydajność"
+    },
+    "Troubleshooting": {
+        "message": "Rozwiązywanie problemów"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "Niższa szczegółowość pokazuje mniej efektów pogodowych i działa lepiej na słabszych komputerach. „Jak grafika gry” używa poziomu z gotowych ustawień jakości grafiki."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "Wyłączenie efektu nie usuwa go od razu: to, co już jest na niebie, znika samo (do 2 minut)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* Działa od następnego meczu."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "Ekstremalne pokazuje o 50% więcej niż Wysokie. Jeśli gra się przycina, zmniejsz szczegółowość."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "Zmiana tych opcji może zepsuć moda. Jeśli tak się stanie, kliknij __button__."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "Ryzykowne: wyższe wartości mogą powodować przycięcia gry."
+    },
+    "Warning:": {
+        "message": "Uwaga:"
+    },
+    "normal": {
+        "message": "normalnie"
+    },
+    "particles": {
+        "message": "cząsteczek"
+    },
+    "per update": {
+        "message": "na aktualizację"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "To tłumaczenie wykonała SI i nie zostało sprawdzone przez rodzimego użytkownika języka, więc może zawierać błędy. Zgłaszaj je na stronie moda."
+    }
+}

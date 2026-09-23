@@ -1,0 +1,19 @@
+{
+    "lluvia_viento": 24,
+    "lluvia_ventarron": 24,
+    "virga_viento": 24,
+    "nieve_viento": 72,
+    "lluvia_viento_x15": 24,
+    "lluvia_ventarron_x15": 24,
+    "virga_viento_x15": 24,
+    "nieve_viento_x15": 72,
+    "nubes": 5,
+    "rayoh_tierra": 20,
+    "rayoh_nube": 20,
+    "arcoh_cian": 10,
+    "arcoh_naranja": 10,
+    "ceniza": 1,
+    "brillo_lava": 1,
+    "caida_ceniza_viento": 24,
+    "lluvia_barro_viento": 24
+}

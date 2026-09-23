@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "Időjárás részletessége (összes effekt)"
+    },
+    "Show clouds": {
+        "message": "Felhők megjelenítése"
+    },
+    "Show rain": {
+        "message": "Eső megjelenítése"
+    },
+    "Show snow": {
+        "message": "Hó megjelenítése"
+    },
+    "Show rain that dries up before landing": {
+        "message": "A földet érés előtt elpárolgó eső megjelenítése"
+    },
+    "Show lightning in storms *": {
+        "message": "Villámok megjelenítése viharokban *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "Vulkáni hamufelhők megjelenítése *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "Villámok megjelenítése a vulkáni hamuban *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "Elektromos szikrák megjelenítése fémbolygókon"
+    },
+    "How many clouds": {
+        "message": "Felhők mennyisége"
+    },
+    "How much rain and snow": {
+        "message": "Eső és hó mennyisége"
+    },
+    "How many storms have lightning *": {
+        "message": "Hány viharban legyen villám *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "Vulkáni hamufelhők mennyisége *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "Villámok mennyisége a vulkáni hamuban *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "Szikrák mennyisége fémbolygókon *"
+    },
+    "Show advanced options": {
+        "message": "Speciális beállítások megjelenítése"
+    },
+    "How fast clouds drift": {
+        "message": "A felhők sebessége"
+    },
+    "How often clouds turn into rain": {
+        "message": "Milyen gyakran lesz a felhőből eső"
+    },
+    "How often rain turns into a storm": {
+        "message": "Milyen gyakran lesz az esőből vihar"
+    },
+    "How long rain lasts": {
+        "message": "Az eső időtartama"
+    },
+    "How long clouds last": {
+        "message": "A felhők élettartama"
+    },
+    "Effect limit per planet": {
+        "message": "Effektkorlát bolygónként"
+    },
+    "Effect limit for the whole system": {
+        "message": "Effektkorlát az egész rendszerre"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "Milyen gyorsan jelennek meg új felhők és eső"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "Másodpercek a felhőmozgás frissítései között (kevesebb akadozást okozhat)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "Hibakeresési információk írása a játék naplójába"
+    },
+    "Match game graphics": {
+        "message": "A játék grafikája szerint"
+    },
+    "Low": {
+        "message": "Alacsony"
+    },
+    "Medium": {
+        "message": "Közepes"
+    },
+    "High": {
+        "message": "Magas"
+    },
+    "Extreme": {
+        "message": "Extrém"
+    },
+    "Custom": {
+        "message": "Egyedi"
+    },
+    "On": {
+        "message": "Be"
+    },
+    "Off": {
+        "message": "Ki"
+    },
+    "Yes": {
+        "message": "Igen"
+    },
+    "No": {
+        "message": "Nem"
+    },
+    "Detail": {
+        "message": "Részletesség"
+    },
+    "Turn effects on or off": {
+        "message": "Effektek be- és kikapcsolása"
+    },
+    "Detail per effect": {
+        "message": "Részletesség effektenként"
+    },
+    "Advanced": {
+        "message": "Speciális"
+    },
+    "Weather behavior": {
+        "message": "Az időjárás viselkedése"
+    },
+    "Performance": {
+        "message": "Teljesítmény"
+    },
+    "Troubleshooting": {
+        "message": "Hibaelhárítás"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "Az alacsonyabb részletesség kevesebb időjárási effektet mutat, és lassabb gépeken jobban fut. „A játék grafikája szerint” a grafikai minőség előbeállításod szintjét használja."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "Egy effekt kikapcsolása nem távolítja el azonnal: ami már az égen van, magától eltűnik (legfeljebb 2 perc)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* A következő meccstől érvényes."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "Az Extrém 50%-kal többet mutat, mint a Magas. Ha a játék akadozik, csökkentsd a részletességet."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "Ezeknek a beállításoknak a módosítása elronthatja a modot. Ha ez történik, nyomd meg ezt: __button__."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "Kockázatos: a magasabb értékek akadozást okozhatnak."
+    },
+    "Warning:": {
+        "message": "Figyelem:"
+    },
+    "normal": {
+        "message": "normál"
+    },
+    "particles": {
+        "message": "részecske"
+    },
+    "per update": {
+        "message": "frissítésenként"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "Ezt a fordítást mesterséges intelligencia készítette, és anyanyelvi beszélő nem ellenőrizte, ezért fordítási hibákat tartalmazhat. Kérjük, jelezd őket a mod oldalán."
+    }
+}

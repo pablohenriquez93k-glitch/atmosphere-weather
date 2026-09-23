@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "Vejrdetaljer (alle effekter)"
+    },
+    "Show clouds": {
+        "message": "Vis skyer"
+    },
+    "Show rain": {
+        "message": "Vis regn"
+    },
+    "Show snow": {
+        "message": "Vis sne"
+    },
+    "Show rain that dries up before landing": {
+        "message": "Vis regn, der fordamper før den rammer jorden"
+    },
+    "Show lightning in storms *": {
+        "message": "Vis lyn i tordenvejr *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "Vis vulkanske askeskyer *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "Vis lyn i vulkansk aske *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "Vis elektriske gnister på metalplaneter"
+    },
+    "How many clouds": {
+        "message": "Hvor mange skyer"
+    },
+    "How much rain and snow": {
+        "message": "Hvor meget regn og sne"
+    },
+    "How many storms have lightning *": {
+        "message": "Hvor mange tordenvejr har lyn *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "Hvor mange vulkanske askeskyer *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "Hvor meget lyn i vulkansk aske *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "Hvor mange gnister på metalplaneter *"
+    },
+    "Show advanced options": {
+        "message": "Vis avancerede indstillinger"
+    },
+    "How fast clouds drift": {
+        "message": "Hvor hurtigt skyerne driver"
+    },
+    "How often clouds turn into rain": {
+        "message": "Hvor ofte skyer bliver til regn"
+    },
+    "How often rain turns into a storm": {
+        "message": "Hvor ofte regn bliver til tordenvejr"
+    },
+    "How long rain lasts": {
+        "message": "Hvor længe regnen varer"
+    },
+    "How long clouds last": {
+        "message": "Hvor længe skyerne varer"
+    },
+    "Effect limit per planet": {
+        "message": "Effektgrænse pr. planet"
+    },
+    "Effect limit for the whole system": {
+        "message": "Effektgrænse for hele systemet"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "Hvor hurtigt nye skyer og regn dukker op"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "Sekunder mellem opdateringer af skyernes bevægelse (færre kan give hakken)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "Skriv fejlfindingsinfo i spillets log"
+    },
+    "Match game graphics": {
+        "message": "Som spillets grafik"
+    },
+    "Low": {
+        "message": "Lav"
+    },
+    "Medium": {
+        "message": "Middel"
+    },
+    "High": {
+        "message": "Høj"
+    },
+    "Extreme": {
+        "message": "Ekstrem"
+    },
+    "Custom": {
+        "message": "Brugerdefineret"
+    },
+    "On": {
+        "message": "Til"
+    },
+    "Off": {
+        "message": "Fra"
+    },
+    "Yes": {
+        "message": "Ja"
+    },
+    "No": {
+        "message": "Nej"
+    },
+    "Detail": {
+        "message": "Detaljer"
+    },
+    "Turn effects on or off": {
+        "message": "Slå effekter til eller fra"
+    },
+    "Detail per effect": {
+        "message": "Detaljer pr. effekt"
+    },
+    "Advanced": {
+        "message": "Avanceret"
+    },
+    "Weather behavior": {
+        "message": "Vejrets opførsel"
+    },
+    "Performance": {
+        "message": "Ydeevne"
+    },
+    "Troubleshooting": {
+        "message": "Fejlfinding"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "Færre detaljer viser færre vejreffekter og kører bedre på langsommere computere. \"Som spillets grafik\" bruger niveauet fra din grafikkvalitet."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "At slå en effekt fra fjerner den ikke med det samme: det, der allerede er på himlen, forsvinder af sig selv (op til 2 minutter)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* Træder i kraft i din næste kamp."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "Ekstrem viser 50 % mere end Høj. Hvis spillet hakker, så sænk detaljerne."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "Ændringer af disse indstillinger kan ødelægge modden. Hvis det sker, så tryk på __button__."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "Risikabelt: højere værdier kan få spillet til at hakke."
+    },
+    "Warning:": {
+        "message": "Advarsel:"
+    },
+    "normal": {
+        "message": "normal"
+    },
+    "particles": {
+        "message": "partikler"
+    },
+    "per update": {
+        "message": "pr. opdatering"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "Denne oversættelse er lavet med AI og er ikke tjekket af en modersmålstaler, så den kan indeholde oversættelsesfejl. Rapportér dem gerne på moddens side."
+    }
+}

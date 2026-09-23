@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "Деталізація погоди (усі ефекти)"
+    },
+    "Show clouds": {
+        "message": "Показувати хмари"
+    },
+    "Show rain": {
+        "message": "Показувати дощ"
+    },
+    "Show snow": {
+        "message": "Показувати сніг"
+    },
+    "Show rain that dries up before landing": {
+        "message": "Показувати дощ, що випаровується до землі"
+    },
+    "Show lightning in storms *": {
+        "message": "Показувати блискавки в грозах *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "Показувати хмари вулканічного попелу *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "Показувати блискавки у вулканічному попелі *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "Показувати електричні іскри на металевих планетах"
+    },
+    "How many clouds": {
+        "message": "Кількість хмар"
+    },
+    "How much rain and snow": {
+        "message": "Кількість дощу та снігу"
+    },
+    "How many storms have lightning *": {
+        "message": "Скільки гроз мають блискавки *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "Кількість хмар вулканічного попелу *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "Кількість блискавок у вулканічному попелі *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "Кількість іскор на металевих планетах *"
+    },
+    "Show advanced options": {
+        "message": "Показувати розширені налаштування"
+    },
+    "How fast clouds drift": {
+        "message": "Швидкість руху хмар"
+    },
+    "How often clouds turn into rain": {
+        "message": "Як часто хмари дають дощ"
+    },
+    "How often rain turns into a storm": {
+        "message": "Як часто дощ стає грозою"
+    },
+    "How long rain lasts": {
+        "message": "Тривалість дощу"
+    },
+    "How long clouds last": {
+        "message": "Тривалість життя хмар"
+    },
+    "Effect limit per planet": {
+        "message": "Ліміт ефектів на планету"
+    },
+    "Effect limit for the whole system": {
+        "message": "Ліміт ефектів на всю систему"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "Як швидко з'являються нові хмари та дощ"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "Секунди між оновленнями руху хмар (менше — можливі підгальмовування)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "Записувати діагностичну інформацію в журнал гри"
+    },
+    "Match game graphics": {
+        "message": "Як графіка гри"
+    },
+    "Low": {
+        "message": "Низька"
+    },
+    "Medium": {
+        "message": "Середня"
+    },
+    "High": {
+        "message": "Висока"
+    },
+    "Extreme": {
+        "message": "Екстремальна"
+    },
+    "Custom": {
+        "message": "Власна"
+    },
+    "On": {
+        "message": "Увімк."
+    },
+    "Off": {
+        "message": "Вимк."
+    },
+    "Yes": {
+        "message": "Так"
+    },
+    "No": {
+        "message": "Ні"
+    },
+    "Detail": {
+        "message": "Деталізація"
+    },
+    "Turn effects on or off": {
+        "message": "Увімкнення та вимкнення ефектів"
+    },
+    "Detail per effect": {
+        "message": "Деталізація за ефектами"
+    },
+    "Advanced": {
+        "message": "Розширені"
+    },
+    "Weather behavior": {
+        "message": "Поведінка погоди"
+    },
+    "Performance": {
+        "message": "Продуктивність"
+    },
+    "Troubleshooting": {
+        "message": "Діагностика"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "Нижча деталізація показує менше погодних ефектів і краще працює на слабких комп'ютерах. «Як графіка гри» використовує рівень вашого набору якості графіки."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "Вимкнення ефекту не прибирає його одразу: те, що вже в небі, зникає саме (до 2 хвилин)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* Застосовується з наступного матчу."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "Екстремальна показує на 50% більше, ніж Висока. Якщо гра підгальмовує, зменште деталізацію."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "Зміна цих налаштувань може зламати мод. Якщо це станеться, натисніть __button__."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "Ризиковано: вищі значення можуть спричинити підгальмовування."
+    },
+    "Warning:": {
+        "message": "Увага:"
+    },
+    "normal": {
+        "message": "звичайно"
+    },
+    "particles": {
+        "message": "частинок"
+    },
+    "per update": {
+        "message": "за оновлення"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "Цей переклад зроблено ШІ, і його не перевіряв носій мови, тож він може містити помилки перекладу. Повідомляйте про них на сторінці мода."
+    }
+}

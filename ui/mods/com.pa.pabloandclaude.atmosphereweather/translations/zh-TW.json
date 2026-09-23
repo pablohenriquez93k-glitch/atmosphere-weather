@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "天氣細節(所有效果)"
+    },
+    "Show clouds": {
+        "message": "顯示雲"
+    },
+    "Show rain": {
+        "message": "顯示雨"
+    },
+    "Show snow": {
+        "message": "顯示雪"
+    },
+    "Show rain that dries up before landing": {
+        "message": "顯示落地前蒸發的雨"
+    },
+    "Show lightning in storms *": {
+        "message": "顯示暴風雨中的閃電 *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "顯示火山灰雲 *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "顯示火山灰中的閃電 *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "顯示金屬星球上的電火花"
+    },
+    "How many clouds": {
+        "message": "雲的數量"
+    },
+    "How much rain and snow": {
+        "message": "雨雪量"
+    },
+    "How many storms have lightning *": {
+        "message": "有閃電的暴風雨數量 *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "火山灰雲數量 *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "火山灰中的閃電數量 *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "金屬星球上的火花數量 *"
+    },
+    "Show advanced options": {
+        "message": "顯示進階選項"
+    },
+    "How fast clouds drift": {
+        "message": "雲的飄動速度"
+    },
+    "How often clouds turn into rain": {
+        "message": "雲變成雨的頻率"
+    },
+    "How often rain turns into a storm": {
+        "message": "雨變成暴風雨的頻率"
+    },
+    "How long rain lasts": {
+        "message": "降雨持續時間"
+    },
+    "How long clouds last": {
+        "message": "雲的持續時間"
+    },
+    "Effect limit per planet": {
+        "message": "每顆星球的效果上限"
+    },
+    "Effect limit for the whole system": {
+        "message": "整個星系的效果上限"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "新雲和新雨出現的速度"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "雲移動更新間隔(秒)(越短可能越卡頓)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "將疑難排解資訊寫入遊戲記錄"
+    },
+    "Match game graphics": {
+        "message": "與遊戲畫面一致"
+    },
+    "Low": {
+        "message": "低"
+    },
+    "Medium": {
+        "message": "中等"
+    },
+    "High": {
+        "message": "高"
+    },
+    "Extreme": {
+        "message": "極高"
+    },
+    "Custom": {
+        "message": "客製化"
+    },
+    "On": {
+        "message": "開啟"
+    },
+    "Off": {
+        "message": "關閉"
+    },
+    "Yes": {
+        "message": "是"
+    },
+    "No": {
+        "message": "否"
+    },
+    "Detail": {
+        "message": "細節"
+    },
+    "Turn effects on or off": {
+        "message": "開關效果"
+    },
+    "Detail per effect": {
+        "message": "各效果細節"
+    },
+    "Advanced": {
+        "message": "進階"
+    },
+    "Weather behavior": {
+        "message": "天氣行為"
+    },
+    "Performance": {
+        "message": "效能"
+    },
+    "Troubleshooting": {
+        "message": "疑難排解"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "細節越低,天氣效果越少,在較慢的電腦上執行更順暢。「與遊戲畫面一致」會使用你的畫質預設等級。"
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "關閉效果不會立即移除:已經在天空中的會自行消散(最多 2 分鐘)。"
+    },
+    "* Takes effect in your next match.": {
+        "message": "* 下一場對戰生效。"
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "極高比高多顯示 50%。如果遊戲卡頓,請降低細節。"
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "變更這些選項可能會使模組出錯。如果發生這種情況,請按下 __button__。"
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "有風險:數值越高,遊戲越可能卡頓。"
+    },
+    "Warning:": {
+        "message": "警告:"
+    },
+    "normal": {
+        "message": "預設"
+    },
+    "particles": {
+        "message": "粒子"
+    },
+    "per update": {
+        "message": "每次更新"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "此翻譯由 AI 完成,未經母語人士審閱,因此可能包含翻譯錯誤。請在模組頁面回報。"
+    }
+}

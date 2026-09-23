@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "Sään yksityiskohdat (kaikki efektit)"
+    },
+    "Show clouds": {
+        "message": "Näytä pilvet"
+    },
+    "Show rain": {
+        "message": "Näytä sade"
+    },
+    "Show snow": {
+        "message": "Näytä lumi"
+    },
+    "Show rain that dries up before landing": {
+        "message": "Näytä sade, joka haihtuu ennen maahan osumista"
+    },
+    "Show lightning in storms *": {
+        "message": "Näytä salamat ukkosmyrskyissä *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "Näytä tulivuoren tuhkapilvet *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "Näytä salamat tulivuoren tuhkassa *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "Näytä sähkökipinät metalliplaneetoilla"
+    },
+    "How many clouds": {
+        "message": "Pilvien määrä"
+    },
+    "How much rain and snow": {
+        "message": "Sateen ja lumen määrä"
+    },
+    "How many storms have lightning *": {
+        "message": "Kuinka monessa ukkosmyrskyssä on salamoita *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "Tulivuoren tuhkapilvien määrä *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "Salamoiden määrä tulivuoren tuhkassa *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "Kipinöiden määrä metalliplaneetoilla *"
+    },
+    "Show advanced options": {
+        "message": "Näytä lisäasetukset"
+    },
+    "How fast clouds drift": {
+        "message": "Kuinka nopeasti pilvet liikkuvat"
+    },
+    "How often clouds turn into rain": {
+        "message": "Kuinka usein pilvistä tulee sadetta"
+    },
+    "How often rain turns into a storm": {
+        "message": "Kuinka usein sade muuttuu ukkosmyrskyksi"
+    },
+    "How long rain lasts": {
+        "message": "Kuinka kauan sade kestää"
+    },
+    "How long clouds last": {
+        "message": "Kuinka kauan pilvet kestävät"
+    },
+    "Effect limit per planet": {
+        "message": "Efektiraja planeettaa kohden"
+    },
+    "Effect limit for the whole system": {
+        "message": "Efektiraja koko järjestelmälle"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "Kuinka nopeasti uusia pilviä ja sadetta ilmestyy"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "Sekunteja pilvien liikkeen päivitysten välillä (vähemmän voi aiheuttaa nykimistä)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "Kirjoita vianetsintätiedot pelin lokiin"
+    },
+    "Match game graphics": {
+        "message": "Pelin grafiikan mukaan"
+    },
+    "Low": {
+        "message": "Matala"
+    },
+    "Medium": {
+        "message": "Keskitaso"
+    },
+    "High": {
+        "message": "Korkea"
+    },
+    "Extreme": {
+        "message": "Äärimmäinen"
+    },
+    "Custom": {
+        "message": "Mukautettu"
+    },
+    "On": {
+        "message": "Päällä"
+    },
+    "Off": {
+        "message": "Pois"
+    },
+    "Yes": {
+        "message": "Kyllä"
+    },
+    "No": {
+        "message": "Ei"
+    },
+    "Detail": {
+        "message": "Yksityiskohdat"
+    },
+    "Turn effects on or off": {
+        "message": "Efektit päälle tai pois"
+    },
+    "Detail per effect": {
+        "message": "Yksityiskohdat efekteittäin"
+    },
+    "Advanced": {
+        "message": "Lisäasetukset"
+    },
+    "Weather behavior": {
+        "message": "Sään käyttäytyminen"
+    },
+    "Performance": {
+        "message": "Suorituskyky"
+    },
+    "Troubleshooting": {
+        "message": "Vianetsintä"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "Vähemmän yksityiskohtia näyttää vähemmän sääefektejä ja toimii paremmin hitaammilla tietokoneilla. \"Pelin grafiikan mukaan\" käyttää grafiikan laatuasetuksesi tasoa."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "Efektin sammuttaminen ei poista sitä heti: se, mikä on jo taivaalla, häviää itsestään (enintään 2 minuutissa)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* Tulee voimaan seuraavassa ottelussa."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "Äärimmäinen näyttää 50 % enemmän kuin Korkea. Jos peli nykii, laske yksityiskohtia."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "Näiden asetusten muuttaminen voi rikkoa modin. Jos niin käy, paina __button__."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "Riskialtis: suuremmat arvot voivat saada pelin nykimään."
+    },
+    "Warning:": {
+        "message": "Varoitus:"
+    },
+    "normal": {
+        "message": "normaali"
+    },
+    "particles": {
+        "message": "partikkelia"
+    },
+    "per update": {
+        "message": "päivitystä kohden"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "Tämä käännös on tehty tekoälyllä, eikä äidinkielinen puhuja ole tarkistanut sitä, joten siinä voi olla käännösvirheitä. Ilmoita niistä modin sivulla."
+    }
+}

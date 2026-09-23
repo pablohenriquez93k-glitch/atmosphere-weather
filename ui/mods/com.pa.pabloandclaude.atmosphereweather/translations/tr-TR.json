@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "Hava durumu ayrıntısı (tüm efektler)"
+    },
+    "Show clouds": {
+        "message": "Bulutları göster"
+    },
+    "Show rain": {
+        "message": "Yağmuru göster"
+    },
+    "Show snow": {
+        "message": "Karı göster"
+    },
+    "Show rain that dries up before landing": {
+        "message": "Yere ulaşmadan buharlaşan yağmuru göster"
+    },
+    "Show lightning in storms *": {
+        "message": "Fırtınalarda şimşekleri göster *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "Volkanik kül bulutlarını göster *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "Volkanik külde şimşekleri göster *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "Metal gezegenlerde elektrik kıvılcımlarını göster"
+    },
+    "How many clouds": {
+        "message": "Bulut sayısı"
+    },
+    "How much rain and snow": {
+        "message": "Yağmur ve kar miktarı"
+    },
+    "How many storms have lightning *": {
+        "message": "Kaç fırtınada şimşek olsun *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "Volkanik kül bulutu sayısı *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "Volkanik küldeki şimşek miktarı *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "Metal gezegenlerdeki kıvılcım sayısı *"
+    },
+    "Show advanced options": {
+        "message": "Gelişmiş seçenekleri göster"
+    },
+    "How fast clouds drift": {
+        "message": "Bulutların hareket hızı"
+    },
+    "How often clouds turn into rain": {
+        "message": "Bulutların ne sıklıkla yağmura dönüştüğü"
+    },
+    "How often rain turns into a storm": {
+        "message": "Yağmurun ne sıklıkla fırtınaya dönüştüğü"
+    },
+    "How long rain lasts": {
+        "message": "Yağmurun süresi"
+    },
+    "How long clouds last": {
+        "message": "Bulutların süresi"
+    },
+    "Effect limit per planet": {
+        "message": "Gezegen başına efekt sınırı"
+    },
+    "Effect limit for the whole system": {
+        "message": "Tüm sistem için efekt sınırı"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "Yeni bulutların ve yağmurun ne kadar hızlı belirdiği"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "Bulut hareketi güncellemeleri arasındaki saniye (daha az takılmaya yol açabilir)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "Sorun giderme bilgilerini oyun günlüğüne yaz"
+    },
+    "Match game graphics": {
+        "message": "Oyunun grafikleriyle aynı"
+    },
+    "Low": {
+        "message": "Düşük"
+    },
+    "Medium": {
+        "message": "Orta"
+    },
+    "High": {
+        "message": "Yüksek"
+    },
+    "Extreme": {
+        "message": "Aşırı"
+    },
+    "Custom": {
+        "message": "Özel"
+    },
+    "On": {
+        "message": "Açık"
+    },
+    "Off": {
+        "message": "Kapalı"
+    },
+    "Yes": {
+        "message": "Evet"
+    },
+    "No": {
+        "message": "Hayır"
+    },
+    "Detail": {
+        "message": "Ayrıntı"
+    },
+    "Turn effects on or off": {
+        "message": "Efektleri aç veya kapat"
+    },
+    "Detail per effect": {
+        "message": "Efekt başına ayrıntı"
+    },
+    "Advanced": {
+        "message": "Gelişmiş"
+    },
+    "Weather behavior": {
+        "message": "Hava davranışı"
+    },
+    "Performance": {
+        "message": "Performans"
+    },
+    "Troubleshooting": {
+        "message": "Sorun giderme"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "Daha düşük ayrıntı daha az hava efekti gösterir ve yavaş bilgisayarlarda daha iyi çalışır. \"Oyunun grafikleriyle aynı\", grafik kalite ön ayarınızın seviyesini kullanır."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "Bir efekti kapatmak onu hemen kaldırmaz: gökyüzünde olan kendiliğinden kaybolur (en fazla 2 dakika)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* Bir sonraki maçınızda geçerli olur."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "Aşırı, Yüksek'ten %50 daha fazla gösterir. Oyun takılırsa ayrıntıyı düşürün."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "Bu seçenekleri değiştirmek modu bozabilir. Böyle olursa __button__ düğmesine basın."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "Riskli: yüksek değerler oyunun takılmasına yol açabilir."
+    },
+    "Warning:": {
+        "message": "Uyarı:"
+    },
+    "normal": {
+        "message": "normal"
+    },
+    "particles": {
+        "message": "parçacık"
+    },
+    "per update": {
+        "message": "güncelleme başına"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "Bu çeviri yapay zekâ ile yapıldı ve anadili konuşan biri tarafından kontrol edilmedi, bu yüzden çeviri hataları içerebilir. Lütfen hataları modun sayfasında bildirin."
+    }
+}

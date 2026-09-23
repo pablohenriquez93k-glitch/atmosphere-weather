@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "Weerdetail (alle effecten)"
+    },
+    "Show clouds": {
+        "message": "Wolken tonen"
+    },
+    "Show rain": {
+        "message": "Regen tonen"
+    },
+    "Show snow": {
+        "message": "Sneeuw tonen"
+    },
+    "Show rain that dries up before landing": {
+        "message": "Regen tonen die verdampt voordat hij de grond raakt"
+    },
+    "Show lightning in storms *": {
+        "message": "Bliksem in onweersbuien tonen *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "Vulkanische aswolken tonen *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "Bliksem in vulkanische as tonen *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "Elektrische vonken op metaalplaneten tonen"
+    },
+    "How many clouds": {
+        "message": "Hoeveel wolken"
+    },
+    "How much rain and snow": {
+        "message": "Hoeveel regen en sneeuw"
+    },
+    "How many storms have lightning *": {
+        "message": "Hoeveel onweersbuien bliksem hebben *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "Hoeveel vulkanische aswolken *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "Hoeveel bliksem in vulkanische as *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "Hoeveel vonken op metaalplaneten *"
+    },
+    "Show advanced options": {
+        "message": "Geavanceerde opties tonen"
+    },
+    "How fast clouds drift": {
+        "message": "Hoe snel wolken drijven"
+    },
+    "How often clouds turn into rain": {
+        "message": "Hoe vaak wolken regen worden"
+    },
+    "How often rain turns into a storm": {
+        "message": "Hoe vaak regen onweer wordt"
+    },
+    "How long rain lasts": {
+        "message": "Hoe lang regen duurt"
+    },
+    "How long clouds last": {
+        "message": "Hoe lang wolken blijven"
+    },
+    "Effect limit per planet": {
+        "message": "Effectlimiet per planeet"
+    },
+    "Effect limit for the whole system": {
+        "message": "Effectlimiet voor het hele systeem"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "Hoe snel nieuwe wolken en regen verschijnen"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "Seconden tussen updates van de wolkbeweging (minder kan haperen)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "Diagnose-informatie naar het spellogboek schrijven"
+    },
+    "Match game graphics": {
+        "message": "Zoals de spelgraphics"
+    },
+    "Low": {
+        "message": "Laag"
+    },
+    "Medium": {
+        "message": "Gemiddeld"
+    },
+    "High": {
+        "message": "Hoog"
+    },
+    "Extreme": {
+        "message": "Extreem"
+    },
+    "Custom": {
+        "message": "Aangepast"
+    },
+    "On": {
+        "message": "Aan"
+    },
+    "Off": {
+        "message": "Uit"
+    },
+    "Yes": {
+        "message": "Ja"
+    },
+    "No": {
+        "message": "Nee"
+    },
+    "Detail": {
+        "message": "Detail"
+    },
+    "Turn effects on or off": {
+        "message": "Effecten aan- of uitzetten"
+    },
+    "Detail per effect": {
+        "message": "Detail per effect"
+    },
+    "Advanced": {
+        "message": "Geavanceerd"
+    },
+    "Weather behavior": {
+        "message": "Weergedrag"
+    },
+    "Performance": {
+        "message": "Prestaties"
+    },
+    "Troubleshooting": {
+        "message": "Probleemoplossing"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "Minder detail toont minder weereffecten en werkt beter op tragere computers. 'Zoals de spelgraphics' gebruikt het niveau van je kwaliteits-voorinstelling voor Beeld."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "Een effect uitzetten haalt het niet meteen weg: wat al in de lucht is, verdwijnt vanzelf (tot 2 minuten)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* Werkt vanaf je volgende potje."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "Extreem toont 50% meer dan Hoog. Als het spel hapert, verlaag dan het detail."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "Deze opties wijzigen kan de mod breken. Gebeurt dat, klik dan op __button__."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "Riskant: hogere waarden kunnen het spel laten haperen."
+    },
+    "Warning:": {
+        "message": "Waarschuwing:"
+    },
+    "normal": {
+        "message": "normaal"
+    },
+    "particles": {
+        "message": "deeltjes"
+    },
+    "per update": {
+        "message": "per update"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "Deze vertaling is gemaakt met AI en niet nagekeken door een moedertaalspreker, dus er kunnen vertaalfouten in zitten. Meld ze op de pagina van de mod."
+    }
+}

@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "天候の詳細度(すべてのエフェクト)"
+    },
+    "Show clouds": {
+        "message": "雲を表示"
+    },
+    "Show rain": {
+        "message": "雨を表示"
+    },
+    "Show snow": {
+        "message": "雪を表示"
+    },
+    "Show rain that dries up before landing": {
+        "message": "地面に届く前に蒸発する雨を表示"
+    },
+    "Show lightning in storms *": {
+        "message": "嵐の雷を表示 *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "火山灰の雲を表示 *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "火山灰の中の雷を表示 *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "金属惑星の電気火花を表示"
+    },
+    "How many clouds": {
+        "message": "雲の量"
+    },
+    "How much rain and snow": {
+        "message": "雨と雪の量"
+    },
+    "How many storms have lightning *": {
+        "message": "雷を伴う嵐の数 *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "火山灰の雲の数 *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "火山灰の中の雷の量 *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "金属惑星の火花の数 *"
+    },
+    "Show advanced options": {
+        "message": "詳細設定を表示"
+    },
+    "How fast clouds drift": {
+        "message": "雲の流れる速さ"
+    },
+    "How often clouds turn into rain": {
+        "message": "雲が雨になる頻度"
+    },
+    "How often rain turns into a storm": {
+        "message": "雨が嵐になる頻度"
+    },
+    "How long rain lasts": {
+        "message": "雨の長さ"
+    },
+    "How long clouds last": {
+        "message": "雲の持続時間"
+    },
+    "Effect limit per planet": {
+        "message": "惑星ごとのエフェクト上限"
+    },
+    "Effect limit for the whole system": {
+        "message": "システム全体のエフェクト上限"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "新しい雲と雨の出現速度"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "雲の移動更新の間隔(秒)(短いとカクつくことがあります)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "トラブルシューティング情報をゲームログに書き込む"
+    },
+    "Match game graphics": {
+        "message": "ゲームのグラフィックに合わせる"
+    },
+    "Low": {
+        "message": "低"
+    },
+    "Medium": {
+        "message": "中"
+    },
+    "High": {
+        "message": "高"
+    },
+    "Extreme": {
+        "message": "最高"
+    },
+    "Custom": {
+        "message": "カスタム"
+    },
+    "On": {
+        "message": "オン"
+    },
+    "Off": {
+        "message": "オフ"
+    },
+    "Yes": {
+        "message": "はい"
+    },
+    "No": {
+        "message": "いいえ"
+    },
+    "Detail": {
+        "message": "詳細度"
+    },
+    "Turn effects on or off": {
+        "message": "エフェクトのオン/オフ"
+    },
+    "Detail per effect": {
+        "message": "エフェクトごとの詳細度"
+    },
+    "Advanced": {
+        "message": "詳細設定"
+    },
+    "Weather behavior": {
+        "message": "天候の挙動"
+    },
+    "Performance": {
+        "message": "パフォーマンス"
+    },
+    "Troubleshooting": {
+        "message": "トラブルシューティング"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "詳細度を下げると天候エフェクトが減り、遅いPCでも軽く動きます。「ゲームのグラフィックに合わせる」はグラフィックの品質プリセットのレベルを使います。"
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "エフェクトをオフにしてもすぐには消えません。すでに空にあるものは自然に消えていきます(最大2分)。"
+    },
+    "* Takes effect in your next match.": {
+        "message": "* 次の対戦から有効になります。"
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "最高は高より50%多く表示します。ゲームがカクつく場合は詳細度を下げてください。"
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "これらの設定を変更するとMODが壊れることがあります。その場合は __button__ を押してください。"
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "注意:値を上げるとゲームがカクつくことがあります。"
+    },
+    "Warning:": {
+        "message": "警告:"
+    },
+    "normal": {
+        "message": "標準"
+    },
+    "particles": {
+        "message": "パーティクル"
+    },
+    "per update": {
+        "message": "更新ごと"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "この翻訳はAIによるもので、ネイティブスピーカーによる確認を受けていないため、翻訳の誤りが含まれている可能性があります。誤りはMODのページで報告してください。"
+    }
+}

@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "날씨 세부 수준 (모든 효과)"
+    },
+    "Show clouds": {
+        "message": "구름 표시"
+    },
+    "Show rain": {
+        "message": "비 표시"
+    },
+    "Show snow": {
+        "message": "눈 표시"
+    },
+    "Show rain that dries up before landing": {
+        "message": "땅에 닿기 전에 증발하는 비 표시"
+    },
+    "Show lightning in storms *": {
+        "message": "폭풍의 번개 표시 *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "화산재 구름 표시 *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "화산재 속 번개 표시 *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "금속 행성의 전기 불꽃 표시"
+    },
+    "How many clouds": {
+        "message": "구름 양"
+    },
+    "How much rain and snow": {
+        "message": "비와 눈의 양"
+    },
+    "How many storms have lightning *": {
+        "message": "번개가 치는 폭풍 수 *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "화산재 구름 수 *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "화산재 속 번개 양 *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "금속 행성의 불꽃 수 *"
+    },
+    "Show advanced options": {
+        "message": "고급 옵션 표시"
+    },
+    "How fast clouds drift": {
+        "message": "구름이 흘러가는 속도"
+    },
+    "How often clouds turn into rain": {
+        "message": "구름이 비가 되는 빈도"
+    },
+    "How often rain turns into a storm": {
+        "message": "비가 폭풍이 되는 빈도"
+    },
+    "How long rain lasts": {
+        "message": "비가 내리는 시간"
+    },
+    "How long clouds last": {
+        "message": "구름이 유지되는 시간"
+    },
+    "Effect limit per planet": {
+        "message": "행성당 효과 한도"
+    },
+    "Effect limit for the whole system": {
+        "message": "전체 시스템 효과 한도"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "새 구름과 비가 나타나는 속도"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "구름 이동 업데이트 간격(초) (짧으면 끊길 수 있음)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "문제 해결 정보를 게임 로그에 기록"
+    },
+    "Match game graphics": {
+        "message": "게임 그래픽에 맞춤"
+    },
+    "Low": {
+        "message": "낮음"
+    },
+    "Medium": {
+        "message": "보통"
+    },
+    "High": {
+        "message": "높음"
+    },
+    "Extreme": {
+        "message": "최고"
+    },
+    "Custom": {
+        "message": "사용자 설정"
+    },
+    "On": {
+        "message": "켜기"
+    },
+    "Off": {
+        "message": "끄기"
+    },
+    "Yes": {
+        "message": "예"
+    },
+    "No": {
+        "message": "아니요"
+    },
+    "Detail": {
+        "message": "세부 수준"
+    },
+    "Turn effects on or off": {
+        "message": "효과 켜기/끄기"
+    },
+    "Detail per effect": {
+        "message": "효과별 세부 수준"
+    },
+    "Advanced": {
+        "message": "고급"
+    },
+    "Weather behavior": {
+        "message": "날씨 동작"
+    },
+    "Performance": {
+        "message": "성능"
+    },
+    "Troubleshooting": {
+        "message": "문제 해결"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "세부 수준이 낮으면 날씨 효과가 줄어들고 느린 컴퓨터에서 더 잘 작동합니다. \"게임 그래픽에 맞춤\"은 그래픽 품질 프리셋의 수준을 사용합니다."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "효과를 꺼도 바로 사라지지 않습니다. 이미 하늘에 있는 것은 저절로 사라집니다(최대 2분)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* 다음 경기부터 적용됩니다."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "최고는 높음보다 50% 더 많이 표시합니다. 게임이 끊기면 세부 수준을 낮추세요."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "이 옵션을 변경하면 모드가 망가질 수 있습니다. 그런 경우 __button__ 버튼을 누르세요."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "위험: 값을 높이면 게임이 끊길 수 있습니다."
+    },
+    "Warning:": {
+        "message": "경고:"
+    },
+    "normal": {
+        "message": "기본"
+    },
+    "particles": {
+        "message": "입자"
+    },
+    "per update": {
+        "message": "업데이트당"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "이 번역은 AI로 만들어졌으며 원어민의 검토를 거치지 않아 번역 오류가 있을 수 있습니다. 오류는 모드 페이지에 알려 주세요."
+    }
+}

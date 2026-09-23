@@ -1,0 +1,164 @@
+{
+    "Weather detail (all effects)": {
+        "message": "Detaliu vreme (toate efectele)"
+    },
+    "Show clouds": {
+        "message": "Afișează norii"
+    },
+    "Show rain": {
+        "message": "Afișează ploaia"
+    },
+    "Show snow": {
+        "message": "Afișează zăpada"
+    },
+    "Show rain that dries up before landing": {
+        "message": "Afișează ploaia care se evaporă înainte de sol"
+    },
+    "Show lightning in storms *": {
+        "message": "Afișează fulgerele din furtuni *"
+    },
+    "Show volcano ash clouds *": {
+        "message": "Afișează norii de cenușă vulcanică *"
+    },
+    "Show lightning in volcano ash *": {
+        "message": "Afișează fulgerele din cenușa vulcanică *"
+    },
+    "Show electric sparks on metal planets": {
+        "message": "Afișează scânteile electrice pe planetele metalice"
+    },
+    "How many clouds": {
+        "message": "Câți nori"
+    },
+    "How much rain and snow": {
+        "message": "Câtă ploaie și zăpadă"
+    },
+    "How many storms have lightning *": {
+        "message": "Câte furtuni au fulgere *"
+    },
+    "How many volcano ash clouds *": {
+        "message": "Câți nori de cenușă vulcanică *"
+    },
+    "How much lightning in volcano ash *": {
+        "message": "Câte fulgere în cenușa vulcanică *"
+    },
+    "How many sparks on metal planets *": {
+        "message": "Câte scântei pe planetele metalice *"
+    },
+    "Show advanced options": {
+        "message": "Afișează opțiunile avansate"
+    },
+    "How fast clouds drift": {
+        "message": "Viteza norilor"
+    },
+    "How often clouds turn into rain": {
+        "message": "Cât de des norii aduc ploaie"
+    },
+    "How often rain turns into a storm": {
+        "message": "Cât de des ploaia devine furtună"
+    },
+    "How long rain lasts": {
+        "message": "Durata ploii"
+    },
+    "How long clouds last": {
+        "message": "Durata norilor"
+    },
+    "Effect limit per planet": {
+        "message": "Limită de efecte pe planetă"
+    },
+    "Effect limit for the whole system": {
+        "message": "Limită de efecte pentru tot sistemul"
+    },
+    "How fast new clouds and rain appear": {
+        "message": "Cât de repede apar nori și ploaie noi"
+    },
+    "Seconds between cloud movement updates (lower may stutter)": {
+        "message": "Secunde între actualizările mișcării norilor (mai puțin poate cauza sacadări)"
+    },
+    "Write troubleshooting info to the game log": {
+        "message": "Scrie informații de diagnostic în jurnalul jocului"
+    },
+    "Match game graphics": {
+        "message": "La fel ca grafica jocului"
+    },
+    "Low": {
+        "message": "Scăzut"
+    },
+    "Medium": {
+        "message": "Mediu"
+    },
+    "High": {
+        "message": "Ridicat"
+    },
+    "Extreme": {
+        "message": "Extrem"
+    },
+    "Custom": {
+        "message": "Personalizat"
+    },
+    "On": {
+        "message": "Pornit"
+    },
+    "Off": {
+        "message": "Oprit"
+    },
+    "Yes": {
+        "message": "Da"
+    },
+    "No": {
+        "message": "Nu"
+    },
+    "Detail": {
+        "message": "Detaliu"
+    },
+    "Turn effects on or off": {
+        "message": "Pornește sau oprește efectele"
+    },
+    "Detail per effect": {
+        "message": "Detaliu pe efect"
+    },
+    "Advanced": {
+        "message": "Avansat"
+    },
+    "Weather behavior": {
+        "message": "Comportamentul vremii"
+    },
+    "Performance": {
+        "message": "Performanță"
+    },
+    "Troubleshooting": {
+        "message": "Depanare"
+    },
+    "Lower detail shows fewer weather effects and runs better on slower computers. Match game graphics uses the level of your Graphics quality preset.": {
+        "message": "Un detaliu mai mic afișează mai puține efecte meteo și merge mai bine pe calculatoare mai lente. „La fel ca grafica jocului” folosește nivelul setării de calitate grafică."
+    },
+    "Turning an effect off does not remove it at once: what is already in the sky fades out on its own (up to 2 minutes).": {
+        "message": "Oprirea unui efect nu îl elimină imediat: ce e deja pe cer dispare singur (până la 2 minute)."
+    },
+    "* Takes effect in your next match.": {
+        "message": "* Se aplică de la următorul meci."
+    },
+    "Extreme shows 50% more than High. If the game stutters, lower the detail.": {
+        "message": "Extrem afișează cu 50% mai mult decât Ridicat. Dacă jocul sacadează, scade detaliul."
+    },
+    "Changing these options can break the mod. If that happens, press __button__.": {
+        "message": "Modificarea acestor opțiuni poate strica modul. Dacă se întâmplă, apasă __button__."
+    },
+    "Risky: higher values can make the game stutter.": {
+        "message": "Riscant: valorile mai mari pot face jocul să sacadeze."
+    },
+    "Warning:": {
+        "message": "Atenție:"
+    },
+    "normal": {
+        "message": "normal"
+    },
+    "particles": {
+        "message": "particule"
+    },
+    "per update": {
+        "message": "pe actualizare"
+    },
+    "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
+        "message": "Această traducere a fost făcută cu IA și nu a fost verificată de un vorbitor nativ, așa că poate conține greșeli de traducere. Te rugăm să le raportezi pe pagina modului."
+    }
+}
