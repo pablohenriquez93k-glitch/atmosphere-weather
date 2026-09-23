@@ -1,5 +1,6 @@
 * text=auto eol=lf
 *.png binary
+*.gif binary
 *.papa binary
 
 # Fuera del zip de Community Mods: solo modinfo.json, pa/ y ui/.
@@ -7,3 +8,4 @@
 .gitignore export-ignore
 README.md export-ignore
 icon.png export-ignore
+icon.gif export-ignore

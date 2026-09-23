@@ -1,6 +1,6 @@
 # Atmosphere Weather
 
-![Atmosphere Weather](icon.png)
+![Atmosphere Weather](icon.gif)
 
 Realistic, living weather for every planet in **Planetary Annihilation: Titans**.
 
