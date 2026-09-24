@@ -160,5 +160,8 @@
     },
     "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
         "message": "Tento překlad vytvořila AI a nezkontroloval ho rodilý mluvčí, proto může obsahovat chyby v překladu. Nahlaste je prosím na stránce módu."
+    },
+    "Default values are open to suggestions: tell us on the mod page.": {
+        "message": "Návrhy na výchozí hodnoty jsou vítány: napište nám na stránce modu."
     }
 }

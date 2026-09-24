@@ -160,5 +160,8 @@
     },
     "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
         "message": "Bu çeviri yapay zekâ ile yapıldı ve anadili konuşan biri tarafından kontrol edilmedi, bu yüzden çeviri hataları içerebilir. Lütfen hataları modun sayfasında bildirin."
+    },
+    "Default values are open to suggestions: tell us on the mod page.": {
+        "message": "Varsayılan değerler için öneriler memnuniyetle karşılanır: mod sayfasında bize yazın."
     }
 }

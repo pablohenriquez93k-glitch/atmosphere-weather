@@ -160,5 +160,8 @@
     },
     "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
         "message": "Cette traduction a été réalisée par IA et n'a pas été relue par un locuteur natif : elle peut donc contenir des erreurs de traduction. Merci de les signaler sur la page du mod."
+    },
+    "Default values are open to suggestions: tell us on the mod page.": {
+        "message": "Les valeurs par défaut sont ouvertes aux suggestions : dites-le-nous sur la page du mod."
     }
 }

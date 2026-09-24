@@ -160,5 +160,8 @@
     },
     "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
         "message": "Denne oversettelsen er laget med KI og er ikke kontrollert av en som har språket som morsmål, så den kan inneholde oversettelsesfeil. Meld gjerne fra om dem på modens side."
+    },
+    "Default values are open to suggestions: tell us on the mod page.": {
+        "message": "Forslag til standardverdiene er velkomne: skriv til oss på modsiden."
     }
 }

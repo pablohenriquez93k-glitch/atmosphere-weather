@@ -161,7 +161,8 @@
             { titulo: 'Detail per effect', claves: POR_EFECTO,
               nota: '* Takes effect in your next match.' },
             { avisoExtremo: 'Extreme shows 50% more than High. If the game stutters, lower the detail.' },
-            { titulo: 'Advanced', claves: ['advanced'] },
+            { titulo: 'Advanced', claves: ['advanced'],
+              nota: 'Default values are open to suggestions: tell us on the mod page.', destacada: true },
             { titulo: 'Weather behavior', avanzado: true, claves: ['wind_speed', 'rain_chance', 'storm_chance', 'rain_duration', 'cloud_lifetime'],
               // __button__ = nombre del boton traducido por el juego (settings.js).
               aviso: 'Changing these options can break the mod. If that happens, press __button__.' },

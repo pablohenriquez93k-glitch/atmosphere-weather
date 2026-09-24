@@ -25,6 +25,8 @@
         var extremo = ['quality'].concat(O.POR_EFECTO).map(function (k) { return valor(k) + ' === \'extreme\''; }).join(' || ');
         var AVISO = 'style="color:salmon; margin:0 0 10px;"'; // mismo color que .warning de la pestaña Server
         var NOTA = 'style="opacity:0.7; margin:0 0 10px;"';
+        // Nota destacada (pedido de Pablo): invitacion a sugerir valores por defecto.
+        var DESTACADA = 'style="font-size:16px; color:#8fd3ff; margin:4px 0 14px;"';
         var FILA = 'class="sub-group top" style="flex-wrap:wrap; min-height:0;"';
         // El nombre del boton sale de la traduccion oficial del juego, en mayusculas como en pantalla.
         var BOTON = '{ button: loc(\'!LOC:Restore Tab Defaults\').toUpperCase() }';
@@ -51,7 +53,7 @@
             h += texto(L(s.titulo), 'class="sub-group-title"');
             if (s.aviso) { h += texto(aviso(s.aviso), AVISO); }
             h += '<div ' + FILA + '>' + s.claves.map(opcion).join('') + '</div>';
-            if (s.nota) { h += texto(L(s.nota), NOTA); }
+            if (s.nota) { h += texto(L(s.nota), s.destacada ? DESTACADA : NOTA); }
             return h + '</div>';
         }).join('');
 

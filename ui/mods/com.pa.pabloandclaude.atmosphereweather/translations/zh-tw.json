@@ -160,5 +160,8 @@
     },
     "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
         "message": "此翻譯由 AI 完成,未經母語人士審閱,因此可能包含翻譯錯誤。請在模組頁面回報。"
+    },
+    "Default values are open to suggestions: tell us on the mod page.": {
+        "message": "歡迎對預設值提出建議:請在模組頁面告訴我們。"
     }
 }

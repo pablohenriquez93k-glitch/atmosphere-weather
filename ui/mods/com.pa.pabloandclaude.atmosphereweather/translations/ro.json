@@ -160,5 +160,8 @@
     },
     "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
         "message": "Această traducere a fost făcută cu IA și nu a fost verificată de un vorbitor nativ, așa că poate conține greșeli de traducere. Te rugăm să le raportezi pe pagina modului."
+    },
+    "Default values are open to suggestions: tell us on the mod page.": {
+        "message": "Sugestiile pentru valorile implicite sunt binevenite: scrie-ne pe pagina modului."
     }
 }
