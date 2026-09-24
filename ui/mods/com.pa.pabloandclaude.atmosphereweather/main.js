@@ -43,7 +43,7 @@
 
         setInterval(tick, cfg.TICK_S * 1000);
         setInterval(motor, cfg.MOTOR_MS);
-        setInterval(vigilarPlanetas, 5000);
+        setInterval(vigilarPlanetas, 1000); // barato (solo JS): el clima se va junto con el planeta
     }
 
     function tick() {
@@ -76,15 +76,23 @@
 
     // Ragnarok / choque: planeta muerto -> se borra su clima.
     function vigilarPlanetas() {
-        var lista = listaPlanetas();
+        var lista = listaPlanetas(), muertos = [];
         for (var k in sims) {
             if (!sims.hasOwnProperty(k)) { continue; }
-            if (AW.estaMuerto(lista[k])) {
+            // Muerto, o desaparecido de una lista que si tiene planetas.
+            if (AW.estaMuerto(lista[k]) || (lista.length && !lista[k])) {
                 AW.log('planeta_muerto', { planetId: k });
                 sims[k].detener();
                 delete sims[k];
+                muertos.push(k);
             }
         }
+        if (!muertos.length) { return; }
+        // Excepcion a la regla del ciclo (evento raro): el clima se va junto
+        // con la explosion (de a poco, maximo cfg.MUERTE_S), sin esperar al lote.
+        reg.ejecutarDespedida();
+        // Seguro universal: barrido final de lo nuestro que quede en esos planetas.
+        setTimeout(function () { reg.barrerPlanetas(muertos); }, (cfg.MUERTE_S + 2) * 1000);
     }
 
     function esperarPlanetas(intento) {

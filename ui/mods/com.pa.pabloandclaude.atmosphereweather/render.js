@@ -20,6 +20,7 @@
     render.Reserva = function (p, n) {
         this.p = p;
         this.slots = [];
+        this.muerto = false;
         var fams = ['rayoh_tierra', 'rayoh_nube'];
         for (var f = 0; f < fams.length; f++) {
             for (var i = 0; i < n; i++) { this.slots.push(this.nuevo(fams[f])); }
@@ -31,9 +32,11 @@
     };
     render.Reserva.prototype.nuevo = function (fam) {
         var slot = { fam: fam, pid: null, libre: true, estacion: this.parque() };
-        var pfx = reg.pfxAzar(fam);
+        var pfx = reg.pfxAzar(fam), self = this;
         if (pfx) {
+            // cancelado: si el planeta muere con el rayo aun en cola, no nace huerfano.
             reg.crear({ etiqueta: 'reserva_' + fam, location: slot.estacion, fx: [reg.fx(pfx)],
+                cancelado: function () { return self.muerto; },
                 alCrear: function (id) { slot.pid = id; } });
         }
         return slot;
@@ -51,6 +54,7 @@
         reg.mover(s.pid, s.estacion, 0); // salto directo al estacionamiento, en el lote del ciclo
     };
     render.Reserva.prototype.detener = function () {
+        this.muerto = true;
         for (var i = 0; i < this.slots.length; i++) { reg.matar(this.slots[i].pid); }
         this.slots = [];
     };
@@ -92,7 +96,8 @@
             if (!pfx) { continue; }
             var escondido = !cfg.EFECTOS.metal;
             reg.crear({ etiqueta: fam, location: escondido ? this.parque() : this.locAzar(),
-                fx: [reg.fx(pfx)], alCrear: function (id) {
+                fx: [reg.fx(pfx)], cancelado: function () { return self.muerto; },
+                alCrear: function (id) {
                     // Nacio escondido (apagado al empezar): si las chispas se encienden
                     // mientras se creaba, t = 0 -> sube en el proximo tick, no en 20-50 s.
                     self.arcos.push({ pid: id, t: escondido ? 0 : geo.rand(R[0], R[1]) });
@@ -230,11 +235,14 @@
         }
     };
 
+    // Planeta destruido: la pluma de ceniza se estira y se aleja (main.js).
     render.Lava.prototype.detener = function () {
         this.muerto = true;
+        var p = this.p;
         for (var i = 0; i < this.plumas.length; i++) {
             var pl = this.plumas[i];
-            reg.matar(pl.pid); pl.pid = null;
+            reg.despedir({ pid: pl.pid, loc: reg.location(p.planetId, pl.lat, pl.lon, p.rNube, p.scale), modo: 'estirar' });
+            pl.pid = null;
             reg.matar(pl.caida.pid); pl.caida.pid = null;
         }
     };

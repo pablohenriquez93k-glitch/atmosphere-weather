@@ -14,8 +14,10 @@
 
     // Tope de cobertura segun calidad de nubes. Al bajarla en partida, las nubes
     // de mas no se borran: se disipan solas y no nacen nuevas hasta quedar bajo el tope.
+    // factorCap: tope por capacidad de creacion (reg.repartir).
     function aplicarCalidad() {
-        this.maxCuerpos = Math.round(this.bio.cobertura * reg.nivel('nubes') * AREA_REF / cfg.CUERPO_AREA);
+        this.maxCuerposBase = Math.round(this.bio.cobertura * reg.nivel('nubes') * AREA_REF / cfg.CUERPO_AREA);
+        this.maxCuerpos = Math.round(this.maxCuerposBase * (this.factorCap || 1));
     }
     var Agua = AW.Agua = function (perfil) {
         this.p = perfil;
@@ -28,6 +30,9 @@
         this.nCuerpos = 0;
         this.gasto = 0;
         this.presupuesto = Infinity;
+        this.latNieve = AW.latNieve(perfil.temp);
+        // Franja seca solo en biomas con nieve polar (earth): terreno desierto.
+        this.latSeca = this.bio.nieve === 'polos' ? AW.latSeca(perfil.temp) : 0;
         this.aplicarCalidad();
 
         var nb = cfg.GRID_BANDS, ns = cfg.GRID_SECTORS;
@@ -36,9 +41,10 @@
                 var c = {
                     lat: -90 + (b + 0.5) * 180 / nb,
                     lon: (s + 0.5) * 360 / ns,
-                    uN: geo.umbral(this.bio.nube),
+                    uN: 0,
                     nubes: 0
                 };
+                c.uN = geo.umbral(this.bioEn(c.lat).nube);
                 c.hum = geo.rand(0, c.uN);
                 this.celdas.push(c);
             }
@@ -47,6 +53,11 @@
     };
 
     Agua.prototype.aplicarCalidad = aplicarCalidad;
+
+    // Clima de la latitud: en la franja seca (terreno desierto) rige el de desierto.
+    Agua.prototype.bioEn = function (lat) {
+        return this.latSeca > 0 && Math.abs(lat) < this.latSeca ? cfg.BIOMAS.desert : this.bio;
+    };
 
     // Opciones cambiadas en partida (menu Settings). antes = cfg.EFECTOS/NIVEL previos.
     // Nada se borra de golpe: lo que se apaga se disipa o termina de caer solo.
@@ -103,7 +114,7 @@
     Agua.prototype.nacer = function (c) {
         var bio = this.bio;
         c.hum = 0;
-        c.uN = geo.umbral(bio.nube);
+        c.uN = geo.umbral(this.bioEn(c.lat).nube);
         c.nubes++;
         var lat = geo.clamp(c.lat + geo.rand(-0.5, 0.5) * 180 / cfg.GRID_BANDS, -89, 89);
         var lon = c.lon + geo.rand(-0.5, 0.5) * 360 / cfg.GRID_SECTORS;
@@ -195,7 +206,7 @@
 
     // Randomizer al saturar: llueve (o tormenta) o se disipa.
     Agua.prototype.decidir = function (n) {
-        var bio = this.bio;
+        var bio = this.bioEn(n.lat);
         if (Math.random() >= geo.clamp(bio.pLluvia * cfg.MULT_LLUVIA, 0, 1)) { this.disipar(n, true); return; }
         n.tormenta = Math.random() < geo.clamp(bio.pTormenta * cfg.MULT_TORMENTA * (n.conv ? 2 : 0.67), 0, 1);
         n.virga = !n.tormenta && !!bio.pVirga && Math.random() < bio.pVirga;
@@ -344,7 +355,7 @@
 
     Agua.prototype.esNieve = function (n) {
         var modo = this.bio.nieve;
-        return modo === 'siempre' || (modo === 'polos' && Math.abs(n.lat) >= cfg.NIEVE_LAT_POLOS);
+        return modo === 'siempre' || (modo === 'polos' && Math.abs(n.lat) >= this.latNieve);
     };
 
     // Precipitacion bajo un cuerpo -> { pfx, costo } o null. Siempre con viento
@@ -439,14 +450,16 @@
 
     // Cruce: el puppet nuevo nace vacio y se llena de a poco; el viejo se
     // borra ya y sus particulas se apagan solas -> transicion gradual.
-    Agua.prototype.materializar = function (n, c, parte) {
+    Agua.prototype.materializar = function (n, c, parte, esRelevo) {
         var self = this, slot = c[parte], gen = ++slot.gen;
         if (parte === 'nube') { this.retirarNube(n, c); } else { reg.matar(slot.pid); }
         slot.pid = null;
         if (!slot.fx) { return; }
         reg.crear({
             etiqueta: parte,
+            relevo: !!esRelevo,
             location: this.locCuerpo(n, c),
+            ubicar: function () { return self.locCuerpo(n, c); },
             fx: slot.fx,
             cancelado: function () { return self.muerto || c.muerto || slot.gen !== gen; },
             alCrear: function (id) {
@@ -477,7 +490,7 @@
             // Relevo de generacion: la actual esta por dejar de emitir -> nace la siguiente.
             for (var j = 0; j < n.cuerpos.length; j++) {
                 var s = n.cuerpos[j].nube;
-                if (s.pid !== null && s.fx && ahora - s.inicio >= relevo) { this.materializar(n, n.cuerpos[j], 'nube'); }
+                if (s.pid !== null && s.fx && ahora - s.inicio >= relevo) { this.materializar(n, n.cuerpos[j], 'nube', true); }
             }
         }
         this.moverFantasmas(durS);
@@ -561,13 +574,32 @@
         }
     };
 
+    // Planeta destruido: nubes (y fantasmas) se estiran, lluvia -> virga,
+    // nieve se apaga (reg.ejecutarDespedida, main.js).
     Agua.prototype.detener = function () {
         this.muerto = true;
+        var p = this.p, s = p.scale;
         for (var i = 0; i < this.nubes.length; i++) {
-            for (var j = 0; j < this.nubes[i].cuerpos.length; j++) { this.quitarCuerpo(this.nubes[i].cuerpos[j]); }
+            var n = this.nubes[i];
+            for (var j = 0; j < n.cuerpos.length; j++) {
+                var c = n.cuerpos[j], loc = this.locCuerpo(n, c);
+                c.muerto = true;
+                reg.despedir({ pid: c.nube.pid, loc: loc, modo: 'estirar' });
+                var virga = reg.aVirga(c.precip.clave);
+                if (virga && c.precip.pid !== null) {
+                    reg.despedir({ pid: c.precip.pid, loc: loc, modo: 'evaporar', fx: [reg.fx(virga)] });
+                } else {
+                    reg.matar(c.precip.pid);
+                }
+                c.nube.pid = null; c.precip.pid = null;
+            }
         }
         this.nubes = [];
-        for (var k = 0; k < this.fantasmas.length; k++) { reg.matar(this.fantasmas[k].pid); }
+        for (var k = 0; k < this.fantasmas.length; k++) {
+            var f = this.fantasmas[k], r = p.rNube + f.dh * s;
+            var pos = geo.offset(f.lat, f.lon, f.dx * s, f.dy * s, r);
+            reg.despedir({ pid: f.pid, loc: reg.location(p.planetId, pos.lat, pos.lon, r, s), modo: 'estirar' });
+        }
         this.fantasmas = [];
         if (this.reserva) { this.reserva.detener(); this.reserva = null; }
     };

@@ -30,7 +30,7 @@
                 var c = candidatos[i];
                 if (!c) { continue; }
                 var xhr = new XMLHttpRequest();
-                xhr.open('GET', 'coui://ui/mods/' + ID + '/translations/' + c + '.json', false);
+                xhr.open('GET', 'coui://ui/mods/' + ID + '/translations/' + c.toLowerCase() + '.json', false);
                 try { xhr.send(); } catch (e0) { continue; }
                 if (!xhr.responseText) { continue; }
                 var datos = JSON.parse(xhr.responseText), plano = {};

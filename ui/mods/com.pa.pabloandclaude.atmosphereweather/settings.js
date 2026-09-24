@@ -15,12 +15,12 @@
         // Las computadas ya se evaluaron al crear el modelo: forzar recalculo.
         model.settingDefinitions(api.settings.definitions);
 
-        function item(k) { return '$root.settingsItemMap()[\'' + G + '.' + k + '\']'; }
-        function valor(k) { return item(k) + '.value()'; }
-        function L(s) { return 'loc(\'!LOC:' + s + '\')'; }   // claves sin comillas (opciones.js)
-        function texto(expr, estilo, visible) {
+        var item = function (k) { return '$root.settingsItemMap()[\'' + G + '.' + k + '\']'; };
+        var valor = function (k) { return item(k) + '.value()'; };
+        var L = function (s) { return 'loc(\'!LOC:' + s + '\')'; };   // claves sin comillas (opciones.js)
+        var texto = function (expr, estilo, visible) {
             return '<div ' + estilo + ' data-bind="' + (visible ? 'visible: ' + visible + ', ' : '') + 'text: ' + expr + '"></div>';
-        }
+        };
         var avanzado = valor('advanced') + ' === \'on\'';
         var extremo = ['quality'].concat(O.POR_EFECTO).map(function (k) { return valor(k) + ' === \'extreme\''; }).join(' || ');
         var AVISO = 'style="color:salmon; margin:0 0 10px;"'; // mismo color que .warning de la pestaña Server
@@ -28,22 +28,22 @@
         var FILA = 'class="sub-group top" style="flex-wrap:wrap; min-height:0;"';
         // El nombre del boton sale de la traduccion oficial del juego, en mayusculas como en pantalla.
         var BOTON = '{ button: loc(\'!LOC:Restore Tab Defaults\').toUpperCase() }';
-        function aviso(s) {
+        var aviso = function (s) {
             var t = s.indexOf('__button__') >= 0 ? 'loc(\'!LOC:' + s + '\', ' + BOTON + ')' : L(s);
             return L('Warning:') + ' + \' \' + ' + t;
-        }
+        };
 
         // Lectura del deslizador (el vanilla no muestra el numero), con unidad traducida.
-        function lectura(k) {
+        var lectura = function (k) {
             var d = S[k], v = 'Number(' + valor(k) + ')';
             var txt = 'Math.round(' + v + ' / ' + d.divisor + ') + \'' + d.sufijo + '\'' + (d.palabra ? ' + ' + L(d.palabra) : '');
             return texto(txt + ' + (' + v + ' === ' + d.default + ' ? \' (\' + ' + L('normal') + ' + \')\' : \'\')', 'style="margin-top:4px;"');
-        }
-        function opcion(k) {
+        };
+        var opcion = function (k) {
             var t = '<div data-bind="template: { name: \'setting-template\', data: ' + item(k) + ' }"></div>';
             if (S[k].type === 'slider') { return '<div class="option slider">' + t + lectura(k) + '</div>'; }
             return '<div class="option" data-bind="template: { name: \'setting-template\', data: ' + item(k) + ' }"></div>';
-        }
+        };
 
         var html = O.secciones.map(function (s) {
             if (s.avisoExtremo) { return texto(aviso(s.avisoExtremo), AVISO, extremo); }
