@@ -160,5 +160,8 @@
     },
     "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
         "message": "この翻訳はAIによるもので、ネイティブスピーカーによる確認を受けていないため、翻訳の誤りが含まれている可能性があります。誤りはMODのページで報告してください。"
+    },
+    "Default values are open to suggestions: tell us on the mod page.": {
+        "message": "初期値への提案を歓迎します:MODのページでお知らせください。"
     }
 }

@@ -160,5 +160,8 @@
     },
     "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
         "message": "هذه الترجمة مصنوعة بالذكاء الاصطناعي ولم يراجعها متحدث أصلي، لذلك قد تحتوي على أخطاء في الترجمة. يرجى الإبلاغ عنها في صفحة التعديل."
+    },
+    "Default values are open to suggestions: tell us on the mod page.": {
+        "message": "نرحب باقتراحات تغيير القيم الافتراضية: أخبرنا في صفحة التعديل."
     }
 }

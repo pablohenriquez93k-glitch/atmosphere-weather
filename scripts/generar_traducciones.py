@@ -71,7 +71,8 @@ Warning:
 normal
 particles
 per update
-This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page."""
+This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.
+Default values are open to suggestions: tell us on the mod page."""
 
 IDIOMAS = {}
 
@@ -128,7 +129,8 @@ Aviso:
 normal
 partículas
 por actualización
-Esta traducción se hizo con IA y no ha sido revisada por un hablante nativo, así que puede contener errores de traducción. Infórmalos en la página del mod."""
+Esta traducción se hizo con IA y no ha sido revisada por un hablante nativo, así que puede contener errores de traducción. Infórmalos en la página del mod.
+Los valores predeterminados están abiertos a sugerencias: cuéntanos en la página del mod."""
 
 IDIOMAS["de"] = """Wetterdetails (alle Effekte)
 Wolken anzeigen
@@ -183,7 +185,8 @@ Warnung:
 normal
 Partikel
 pro Aktualisierung
-Diese Übersetzung wurde mit KI erstellt und nicht von einem Muttersprachler geprüft, daher kann sie Übersetzungsfehler enthalten. Bitte melde sie auf der Seite des Mods."""
+Diese Übersetzung wurde mit KI erstellt und nicht von einem Muttersprachler geprüft, daher kann sie Übersetzungsfehler enthalten. Bitte melde sie auf der Seite des Mods.
+Vorschläge zu den Standardwerten sind willkommen: schreib uns auf der Mod-Seite."""
 
 IDIOMAS["fr"] = """Détail météo (tous les effets)
 Afficher les nuages
@@ -238,7 +241,8 @@ Attention :
 normal
 particules
 par mise à jour
-Cette traduction a été réalisée par IA et n'a pas été relue par un locuteur natif : elle peut donc contenir des erreurs de traduction. Merci de les signaler sur la page du mod."""
+Cette traduction a été réalisée par IA et n'a pas été relue par un locuteur natif : elle peut donc contenir des erreurs de traduction. Merci de les signaler sur la page du mod.
+Les valeurs par défaut sont ouvertes aux suggestions : dites-le-nous sur la page du mod."""
 
 IDIOMAS["it"] = """Dettaglio meteo (tutti gli effetti)
 Mostra nuvole
@@ -293,7 +297,8 @@ Attenzione:
 normale
 particelle
 per aggiornamento
-Questa traduzione è stata fatta con l'IA e non è stata revisionata da un madrelingua, quindi può contenere errori di traduzione. Segnalali nella pagina della mod."""
+Questa traduzione è stata fatta con l'IA e non è stata revisionata da un madrelingua, quindi può contenere errori di traduzione. Segnalali nella pagina della mod.
+I valori predefiniti sono aperti a suggerimenti: scrivici sulla pagina della mod."""
 
 IDIOMAS["pt-BR"] = """Detalhe do clima (todos os efeitos)
 Mostrar nuvens
@@ -348,7 +353,8 @@ Aviso:
 normal
 partículas
 por atualização
-Esta tradução foi feita com IA e não foi revisada por um falante nativo, então pode conter erros de tradução. Por favor, informe-os na página do mod."""
+Esta tradução foi feita com IA e não foi revisada por um falante nativo, então pode conter erros de tradução. Por favor, informe-os na página do mod.
+Os valores padrão estão abertos a sugestões: fale conosco na página do mod."""
 
 IDIOMAS["ru"] = """Детализация погоды (все эффекты)
 Показывать облака
@@ -403,7 +409,8 @@ IDIOMAS["ru"] = """Детализация погоды (все эффекты)
 обычно
 частиц
 за обновление
-Этот перевод сделан ИИ и не проверен носителем языка, поэтому в нём могут быть ошибки. Сообщайте о них на странице мода."""
+Этот перевод сделан ИИ и не проверен носителем языка, поэтому в нём могут быть ошибки. Сообщайте о них на странице мода.
+Предложения по значениям по умолчанию приветствуются: пишите на странице мода."""
 
 IDIOMAS["uk"] = """Деталізація погоди (усі ефекти)
 Показувати хмари
@@ -458,7 +465,8 @@ IDIOMAS["uk"] = """Деталізація погоди (усі ефекти)
 звичайно
 частинок
 за оновлення
-Цей переклад зроблено ШІ, і його не перевіряв носій мови, тож він може містити помилки перекладу. Повідомляйте про них на сторінці мода."""
+Цей переклад зроблено ШІ, і його не перевіряв носій мови, тож він може містити помилки перекладу. Повідомляйте про них на сторінці мода.
+Пропозиції щодо стандартних значень вітаються: пишіть на сторінці мода."""
 
 IDIOMAS["pl-PL"] = """Szczegółowość pogody (wszystkie efekty)
 Pokazuj chmury
@@ -513,7 +521,8 @@ Uwaga:
 normalnie
 cząsteczek
 na aktualizację
-To tłumaczenie wykonała SI i nie zostało sprawdzone przez rodzimego użytkownika języka, więc może zawierać błędy. Zgłaszaj je na stronie moda."""
+To tłumaczenie wykonała SI i nie zostało sprawdzone przez rodzimego użytkownika języka, więc może zawierać błędy. Zgłaszaj je na stronie moda.
+Sugestie dotyczące wartości domyślnych są mile widziane: napisz na stronie moda."""
 
 IDIOMAS["cs-CZ"] = """Detaily počasí (všechny efekty)
 Zobrazit mraky
@@ -568,7 +577,8 @@ Varování:
 normální
 částic
 za aktualizaci
-Tento překlad vytvořila AI a nezkontroloval ho rodilý mluvčí, proto může obsahovat chyby v překladu. Nahlaste je prosím na stránce módu."""
+Tento překlad vytvořila AI a nezkontroloval ho rodilý mluvčí, proto může obsahovat chyby v překladu. Nahlaste je prosím na stránce módu.
+Návrhy na výchozí hodnoty jsou vítány: napište nám na stránce modu."""
 
 IDIOMAS["hu-HU"] = """Időjárás részletessége (összes effekt)
 Felhők megjelenítése
@@ -623,7 +633,8 @@ Figyelem:
 normál
 részecske
 frissítésenként
-Ezt a fordítást mesterséges intelligencia készítette, és anyanyelvi beszélő nem ellenőrizte, ezért fordítási hibákat tartalmazhat. Kérjük, jelezd őket a mod oldalán."""
+Ezt a fordítást mesterséges intelligencia készítette, és anyanyelvi beszélő nem ellenőrizte, ezért fordítási hibákat tartalmazhat. Kérjük, jelezd őket a mod oldalán.
+Az alapértékekkel kapcsolatos javaslatokat szívesen fogadjuk: írj nekünk a mod oldalán."""
 
 IDIOMAS["ro"] = """Detaliu vreme (toate efectele)
 Afișează norii
@@ -678,7 +689,8 @@ Atenție:
 normal
 particule
 pe actualizare
-Această traducere a fost făcută cu IA și nu a fost verificată de un vorbitor nativ, așa că poate conține greșeli de traducere. Te rugăm să le raportezi pe pagina modului."""
+Această traducere a fost făcută cu IA și nu a fost verificată de un vorbitor nativ, așa că poate conține greșeli de traducere. Te rugăm să le raportezi pe pagina modului.
+Sugestiile pentru valorile implicite sunt binevenite: scrie-ne pe pagina modului."""
 
 IDIOMAS["nl"] = """Weerdetail (alle effecten)
 Wolken tonen
@@ -733,7 +745,8 @@ Waarschuwing:
 normaal
 deeltjes
 per update
-Deze vertaling is gemaakt met AI en niet nagekeken door een moedertaalspreker, dus er kunnen vertaalfouten in zitten. Meld ze op de pagina van de mod."""
+Deze vertaling is gemaakt met AI en niet nagekeken door een moedertaalspreker, dus er kunnen vertaalfouten in zitten. Meld ze op de pagina van de mod.
+Suggesties voor de standaardwaarden zijn welkom: laat het ons weten op de modpagina."""
 
 IDIOMAS["da"] = """Vejrdetaljer (alle effekter)
 Vis skyer
@@ -788,7 +801,8 @@ Advarsel:
 normal
 partikler
 pr. opdatering
-Denne oversættelse er lavet med AI og er ikke tjekket af en modersmålstaler, så den kan indeholde oversættelsesfejl. Rapportér dem gerne på moddens side."""
+Denne oversættelse er lavet med AI og er ikke tjekket af en modersmålstaler, så den kan indeholde oversættelsesfejl. Rapportér dem gerne på moddens side.
+Forslag til standardværdierne er velkomne: skriv til os på modsiden."""
 
 IDIOMAS["no"] = """Værdetaljer (alle effekter)
 Vis skyer
@@ -843,7 +857,8 @@ Advarsel:
 normal
 partikler
 per oppdatering
-Denne oversettelsen er laget med KI og er ikke kontrollert av en som har språket som morsmål, så den kan inneholde oversettelsesfeil. Meld gjerne fra om dem på modens side."""
+Denne oversettelsen er laget med KI og er ikke kontrollert av en som har språket som morsmål, så den kan inneholde oversettelsesfeil. Meld gjerne fra om dem på modens side.
+Forslag til standardverdiene er velkomne: skriv til oss på modsiden."""
 
 IDIOMAS["sv"] = """Väderdetaljer (alla effekter)
 Visa moln
@@ -898,7 +913,8 @@ Varning:
 normal
 partiklar
 per uppdatering
-Den här översättningen är gjord med AI och har inte granskats av en modersmålstalare, så den kan innehålla översättningsfel. Rapportera dem gärna på moddens sida."""
+Den här översättningen är gjord med AI och har inte granskats av en modersmålstalare, så den kan innehålla översättningsfel. Rapportera dem gärna på moddens sida.
+Förslag på standardvärdena är välkomna: skriv till oss på modsidan."""
 
 IDIOMAS["fi"] = """Sään yksityiskohdat (kaikki efektit)
 Näytä pilvet
@@ -953,7 +969,8 @@ Varoitus:
 normaali
 partikkelia
 päivitystä kohden
-Tämä käännös on tehty tekoälyllä, eikä äidinkielinen puhuja ole tarkistanut sitä, joten siinä voi olla käännösvirheitä. Ilmoita niistä modin sivulla."""
+Tämä käännös on tehty tekoälyllä, eikä äidinkielinen puhuja ole tarkistanut sitä, joten siinä voi olla käännösvirheitä. Ilmoita niistä modin sivulla.
+Ehdotukset oletusarvoihin ovat tervetulleita: kerro meille modin sivulla."""
 
 IDIOMAS["tr-TR"] = """Hava durumu ayrıntısı (tüm efektler)
 Bulutları göster
@@ -1008,7 +1025,8 @@ Uyarı:
 normal
 parçacık
 güncelleme başına
-Bu çeviri yapay zekâ ile yapıldı ve anadili konuşan biri tarafından kontrol edilmedi, bu yüzden çeviri hataları içerebilir. Lütfen hataları modun sayfasında bildirin."""
+Bu çeviri yapay zekâ ile yapıldı ve anadili konuşan biri tarafından kontrol edilmedi, bu yüzden çeviri hataları içerebilir. Lütfen hataları modun sayfasında bildirin.
+Varsayılan değerler için öneriler memnuniyetle karşılanır: mod sayfasında bize yazın."""
 
 IDIOMAS["ar"] = """تفاصيل الطقس (كل التأثيرات)
 إظهار السحب
@@ -1063,7 +1081,8 @@ IDIOMAS["ar"] = """تفاصيل الطقس (كل التأثيرات)
 عادي
 جسيم
 لكل تحديث
-هذه الترجمة مصنوعة بالذكاء الاصطناعي ولم يراجعها متحدث أصلي، لذلك قد تحتوي على أخطاء في الترجمة. يرجى الإبلاغ عنها في صفحة التعديل."""
+هذه الترجمة مصنوعة بالذكاء الاصطناعي ولم يراجعها متحدث أصلي، لذلك قد تحتوي على أخطاء في الترجمة. يرجى الإبلاغ عنها في صفحة التعديل.
+نرحب باقتراحات تغيير القيم الافتراضية: أخبرنا في صفحة التعديل."""
 
 IDIOMAS["ja"] = """天候の詳細度(すべてのエフェクト)
 雲を表示
@@ -1118,7 +1137,8 @@ IDIOMAS["ja"] = """天候の詳細度(すべてのエフェクト)
 標準
 パーティクル
 更新ごと
-この翻訳はAIによるもので、ネイティブスピーカーによる確認を受けていないため、翻訳の誤りが含まれている可能性があります。誤りはMODのページで報告してください。"""
+この翻訳はAIによるもので、ネイティブスピーカーによる確認を受けていないため、翻訳の誤りが含まれている可能性があります。誤りはMODのページで報告してください。
+初期値への提案を歓迎します:MODのページでお知らせください。"""
 
 IDIOMAS["ko"] = """날씨 세부 수준 (모든 효과)
 구름 표시
@@ -1173,7 +1193,8 @@ IDIOMAS["ko"] = """날씨 세부 수준 (모든 효과)
 기본
 입자
 업데이트당
-이 번역은 AI로 만들어졌으며 원어민의 검토를 거치지 않아 번역 오류가 있을 수 있습니다. 오류는 모드 페이지에 알려 주세요."""
+이 번역은 AI로 만들어졌으며 원어민의 검토를 거치지 않아 번역 오류가 있을 수 있습니다. 오류는 모드 페이지에 알려 주세요.
+기본값에 대한 제안을 환영합니다: 모드 페이지에 알려 주세요."""
 
 IDIOMAS["zh-CN"] = """天气细节(所有效果)
 显示云
@@ -1228,7 +1249,8 @@ IDIOMAS["zh-CN"] = """天气细节(所有效果)
 默认
 粒子
 每次更新
-此翻译由 AI 完成,未经母语者审校,因此可能包含翻译错误。请在模组页面报告。"""
+此翻译由 AI 完成,未经母语者审校,因此可能包含翻译错误。请在模组页面报告。
+欢迎对默认值提出建议:请在模组页面告诉我们。"""
 
 IDIOMAS["zh-TW"] = """天氣細節(所有效果)
 顯示雲
@@ -1283,7 +1305,8 @@ IDIOMAS["zh-TW"] = """天氣細節(所有效果)
 預設
 粒子
 每次更新
-此翻譯由 AI 完成,未經母語人士審閱,因此可能包含翻譯錯誤。請在模組頁面回報。"""
+此翻譯由 AI 完成,未經母語人士審閱,因此可能包含翻譯錯誤。請在模組頁面回報。
+歡迎對預設值提出建議:請在模組頁面告訴我們。"""
 
 
 def main():

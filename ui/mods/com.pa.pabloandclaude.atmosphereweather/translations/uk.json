@@ -160,5 +160,8 @@
     },
     "This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.": {
         "message": "Цей переклад зроблено ШІ, і його не перевіряв носій мови, тож він може містити помилки перекладу. Повідомляйте про них на сторінці мода."
+    },
+    "Default values are open to suggestions: tell us on the mod page.": {
+        "message": "Пропозиції щодо стандартних значень вітаються: пишіть на сторінці мода."
     }
 }
