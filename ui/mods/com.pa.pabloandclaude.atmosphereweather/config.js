@@ -1,8 +1,8 @@
 // AtmosphereWeather — constantes. Todo lo ajustable vive aqui.
-// Plan completo: docs/estado_actual_mod.md, seccion "Orquestador AtmosphereWeather".
+// Los .pfx, variantes.json y parametros.json salen de scripts/generar_pfx.py (repo).
 var AW = window.AtmosphereWeather = window.AtmosphereWeather || {};
 
-AW.VERSION = '1.0.0';   // = "version" de modinfo.json
+AW.VERSION = '1.0.1';   // = "version" de modinfo.json
 
 AW.cfg = {
     SPEC_DIR: '/pa/effects/specs/atmosphereweather/',
@@ -58,7 +58,18 @@ AW.cfg = {
         metal_boss: { clima: 'metal' }
         // moon, asteroid, gas, sol: sin clima
     },
-    NIEVE_LAT_POLOS: 60,
+    NIEVE_LAT_POLOS: 60,       // respaldo si el planeta no trae temperatura
+    // Linea de nieve segun la temperatura del planeta (editor 0-100). El terreno
+    // Earth pone hielo donde la temperatura local es baja (pa/terrain/earth.json,
+    // sub-bioma ice); el motor la calcula en C++. Calibrado a ojo con el editor
+    // (Pablo, 2026-09-24): [temperatura, latitud desde la que nieva].
+    NIEVE_POR_TEMP: [[0, 0], [15, 19], [32, 37], [45, 60], [61, 88], [65, 91]],
+    // Franja SECA (sub-bioma desert de earth.json, temperatura local alta): con
+    // los mismos datos la nieve empieza a ~1.3 x temp grados; el desierto cubre
+    // |lat| < 1.3 x temp - 44 (HSO 50 -> 21, Augur 61 -> 35, 32 -> nada). Ahi
+    // se usa el clima de BIOMAS.desert: casi no llueve y mucho es virga (Pablo).
+    SECA_K: 1.3,
+    SECA_OFFSET: 44,
     ESTRATO_LAT: [40, 65],
 
     // Multiplicador de evaporacion por latitud (circulacion real).
@@ -128,6 +139,16 @@ AW.cfg = {
     NUBE_VIDA_MAX_S: 38,       // vida maxima de una bocanada
     GEN_ANTICIPO_S: 10,        // la generacion nueva nace esto antes de que la vieja deje de emitir (>= DRIFT_S + 2: el relevo se revisa por ciclo)
     CREAR_POR_CICLO: 40,       // pocas creaciones por ciclo, repartidas (400 daba tirones)
+    // Planeta destruido: la atmosfera se va en MUERTE_S como maximo (registro.js
+    // ejecutarDespedida). Nubes y plumas se estiran (escala local x,y,z) y se
+    // alejan (radio x EMPUJE); la lluvia pasa a virga; lo demas se apaga.
+    // Fraccion de la capacidad de la cola que pueden usar los relevos de nubes;
+    // el resto queda para lluvia/nieve, nubes nuevas y demas (reg.repartir).
+    CAPACIDAD_USO: 0.7,
+    MUERTE_S: 10,
+    MUERTE_TANDAS: 5,          // borrado en tandas al azar (se va por partes, no de golpe)
+    MUERTE_ESTIRA: [3.0, 0.4, 1.6],   // aprobado por Pablo (2026-09-24)
+    MUERTE_EMPUJE: 1.09,              // Pablo: 1.35 alejaba demasiado -> alejamiento / 4
     VIGIA_S: 600,              // 0 = apagado. Cada 10 s daba picos de frametime (getAllPuppets); va dentro del ciclo
 
     // Precalentamiento: el clima corre en silencio antes de mostrar nada.

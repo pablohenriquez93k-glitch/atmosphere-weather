@@ -9,7 +9,9 @@
     var reg = AW.reg = {};
 
     var runId = Date.now().toString(36);
-    var PROPIO_RE = /\/atmosphereweather\//;
+    // Ruta de NUESTROS .pfx, sacada de config.js: vale tambien para la copia
+    // TEST, que usa otra carpeta (antes, con la ruta fija, tras F5 no purgaba nada).
+    var PROPIO_RE = new RegExp(cfg.SPEC_DIR.replace(/[.*+?^${}()|[\]\\\/]/g, '\\$&'));
 
     // Con el log de diagnostico apagado (default para jugadores) igual se
     // escriben el arranque y los errores: sirven para dar soporte.
@@ -115,16 +117,14 @@
     // listo() cuando el motor devolvio los ids: asi el ciclo puede mover
     // tambien a las recien creadas (si no, quedaban quietas un ciclo).
     reg.procesarCola = function (max, listo) {
-        var tareas = [];
-        while (cola.length && tareas.length < max) {
-            var t = cola.shift();
-            if (!(t.cancelado && t.cancelado())) { tareas.push(t); }
-        }
+        var tareas = elegirParejo(max);
         var hecho = false;
         function fin() { if (!hecho) { hecho = true; if (listo) { listo(); } } }
         if (!tareas.length) { fin(); return; }
         try {
-            api.getWorldView(0).puppet(tareas.map(function (t) { return { location: t.location, fx_offsets: t.fx }; }), true).then(function (res) {
+            // ubicar(): posicion ACTUAL (si espero en la cola, su nube ya se movio;
+            // antes nacia atras y "corria" a alcanzarla).
+            api.getWorldView(0).puppet(tareas.map(function (t) { return { location: t.ubicar ? t.ubicar() : t.location, fx_offsets: t.fx }; }), true).then(function (res) {
                 res = Array.isArray(res) ? res : [res];
                 for (var i = 0; i < tareas.length; i++) { registrarCreado(tareas[i], res[i] && res[i].id); }
                 fin();
@@ -139,6 +139,49 @@
         setTimeout(fin, 1000); // no trabar el ciclo si la promesa no vuelve
     };
 
+    // Reparto parejo: por turnos, una tarea de cada planeta. En FIFO puro, con
+    // muchos planetas los primeros llenaban la cola al arrancar y los ultimos
+    // esperaban minutos sus nubes (Pablo, 12 planetas, 2026-09-24). Dentro de
+    // cada planeta, la reserva de rayos va al final: solo se usa si hay tormenta.
+    // Prioridad dentro de cada planeta (2026-09-24: con la cola saturada, los
+    // relevos de nubes tapaban la lluvia y no llovia en ningun planeta):
+    // 0 lluvia/nieve (lo que mas se nota si falta), 1 relevo de generacion (si
+    // se atrasa, la nube existente se apaga), 2 nubes nuevas y resto, 3 reserva.
+    function prioridad(t) {
+        if (t.etiqueta === 'precip') { return 0; }
+        if (/^reserva_/.test(t.etiqueta)) { return 3; }
+        return t.relevo ? 1 : 2;
+    }
+
+    function elegirParejo(max) {
+        var grupos = {}, orden = [], resto = [], i, t;
+        for (i = 0; i < cola.length; i++) {
+            t = cola[i];
+            if (t.cancelado && t.cancelado()) { continue; }
+            var k = t.location && t.location.planet;
+            if (!grupos[k]) { grupos[k] = [[], [], [], []]; orden.push(k); }
+            grupos[k][prioridad(t)].push(t);
+        }
+        var filas = orden.map(function (k) { return [].concat.apply([], grupos[k]); });
+        var tareas = [], quedan = true;
+        for (var ronda = 0; tareas.length < max && quedan; ronda++) {
+            quedan = false;
+            for (i = 0; i < filas.length && tareas.length < max; i++) {
+                if (ronda < filas[i].length) { tareas.push(filas[i][ronda]); quedan = true; }
+            }
+        }
+        // Lo no elegido queda en la cola, en su orden original.
+        var elegidas = tareas.slice();
+        for (i = 0; i < cola.length; i++) {
+            t = cola[i];
+            var j = elegidas.indexOf(t);
+            if (j >= 0) { elegidas.splice(j, 1); continue; }
+            if (!(t.cancelado && t.cancelado())) { resto.push(t); }
+        }
+        cola = resto;
+        return tareas;
+    }
+
     function registrarCreado(t, id) {
         if (id === undefined || id === null) { AW.log(t.etiqueta + '_sin_id', {}); return; }
         if (t.cancelado && t.cancelado()) { reg.matar(id); return; }
@@ -146,7 +189,7 @@
         if (t.alCrear) { t.alCrear(id); }
     }
 
-    // t = { location, fx:[...], etiqueta, alCrear(id), alPerder(), cancelado() }
+    // t = { location, ubicar(), fx:[...], etiqueta, relevo, alCrear(id), alPerder(), cancelado() }
     // Se crea en el proximo ciclo (reg.procesarCola, main.js).
     reg.crear = function (t) { cola.push(t); };
 
@@ -158,6 +201,115 @@
         if (id === null || id === undefined) { return; }
         delete propios[id];
         aMatar.push(id);
+    };
+
+    // ---------------- despedida: planeta destruido ----------------
+    // La onda de choque arrastra la atmosfera: nubes y plumas se ESTIRAN y se
+    // alejan; la lluvia se EVAPORA (pasa a virga); el resto se apaga en tandas.
+    // Todo en cfg.MUERTE_S como maximo (Pablo). Fuera del ciclo: evento raro, y
+    // la primera parte debe salir junto con la explosion.
+    // item = { pid, loc (location completa), modo: 'estirar' | 'evaporar', fx }
+    var despedida = [];
+    reg.despedir = function (item) {
+        if (item.pid === null || item.pid === undefined) { return; }
+        delete propios[item.pid];   // el vigia no debe recrearlo
+        despedida.push(item);
+    };
+
+    function mezclar(a) {
+        for (var i = a.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1)), x = a[i]; a[i] = a[j]; a[j] = x;
+        }
+        return a;
+    }
+    // Borra ids en tandas al azar entre desde y hasta (segundos desde ahora).
+    function borrarEntre(ids, desde, hasta) {
+        if (!ids.length) { return; }
+        mezclar(ids);
+        var n = Math.max(1, cfg.MUERTE_TANDAS), paso = Math.ceil(ids.length / n);
+        for (var t = 0; t < n; t++) {
+            (function (tanda, espera) {
+                if (!tanda.length) { return; }
+                setTimeout(function () {
+                    try { api.getWorldView(0).unPuppet(tanda, true); } catch (e) { AW.log('matar_lote_excepcion', { n: tanda.length, error: errStr(e) }); }
+                }, espera * 1000);
+            }(ids.slice(t * paso, (t + 1) * paso), desde + (n > 1 ? t * (hasta - desde) / (n - 1) : 0)));
+        }
+    }
+
+    reg.ejecutarDespedida = function () {
+        var wv = api.getWorldView(0), T = cfg.MUERTE_S, E = cfg.MUERTE_ESTIRA, k = cfg.MUERTE_EMPUJE;
+        var est = despedida.filter(function (d) { return d.modo === 'estirar'; });
+        var eva = despedida.filter(function (d) { return d.modo === 'evaporar'; });
+        despedida = [];
+        var resto = aMatar; aMatar = [];
+        if (est.length) {
+            // Estirar y alejar: un solo movePuppet con escala deformada (pos es
+            // relativa al centro del planeta: multiplicarla la aleja).
+            var locs = est.map(function (d) {
+                var l = d.loc, s = l.scale;
+                return { planet: l.planet, pos: [l.pos[0] * k, l.pos[1] * k, l.pos[2] * k], orient: l.orient,
+                    scale: [s * E[0], s * E[1], s * E[2]], snap: false };
+            });
+            try {
+                wv.movePuppet(est.map(function (d) { return d.pid; }), locs, est.map(function () { return T; }))
+                    .then(function () {}, function (err) { AW.log('despedida_rechazada', { n: est.length, error: errStr(err) }); });
+            } catch (e1) { AW.log('despedida_excepcion', { n: est.length, error: errStr(e1) }); }
+            borrarEntre(est.map(function (d) { return d.pid; }), T * 0.5, T);
+        }
+        if (eva.length) {
+            // Lluvia -> virga (Atlas: cambiar fx deja caer las gotas vivas).
+            try {
+                wv.puppet(eva.map(function (d) { return { id: d.pid, location: d.loc, fx_offsets: d.fx }; }), true).then(function (res) {
+                    res = Array.isArray(res) ? res : [res];
+                    // Seguro: si el motor creo puppets NUEVOS en vez de cambiar
+                    // los existentes, tambien se borran (nada huerfano).
+                    var extra = [];
+                    for (var i = 0; i < res.length; i++) {
+                        var id = res[i] && res[i].id;
+                        if (typeof id === 'number' && id !== eva[i].pid) { extra.push(id); }
+                    }
+                    if (extra.length) { AW.log('despedida_virga_nuevos', { n: extra.length }); borrarEntre(extra, T * 0.8, T * 0.8); }
+                }, function (err) { AW.log('despedida_rechazada', { n: eva.length, error: errStr(err) }); });
+            } catch (e2) { AW.log('despedida_excepcion', { n: eva.length, error: errStr(e2) }); }
+            borrarEntre(eva.map(function (d) { return d.pid; }), T * 0.8, T * 0.8);
+        }
+        borrarEntre(resto, 0, T);
+        AW.log('despedida', { estirados: est.length, evaporados: eva.length, apagados: resto.length });
+    };
+
+    // SEGURO UNIVERSAL anti explosion (pedido de Pablo): despues de la
+    // despedida, todo puppet NUESTRO (ruta de nuestros .pfx) que siga en un
+    // planeta muerto se borra, sea del efecto que sea. Cubre efectos futuros
+    // que olviden su propia limpieza y cualquier caso raro del motor.
+    reg.barrerPlanetas = function (planetIds) {
+        var muertos = {};
+        planetIds.forEach(function (k) { muertos[Number(k)] = true; });
+        listarTodos(function (lista) {
+            if (!lista) { return; }
+            var ids = [];
+            for (var i = 0; i < lista.length; i++) {
+                var it = lista[i], id = idDe(it), s = '';
+                var pl = it && it.location && it.location.planet;
+                if (id === null || !muertos[Number(pl)]) { continue; }
+                try { s = JSON.stringify(it); } catch (e) { continue; }
+                if (PROPIO_RE.test(s)) { ids.push(id); delete propios[id]; }
+            }
+            if (ids.length) {
+                try { api.getWorldView(0).unPuppet(ids, true); } catch (e2) { AW.log('barrido_excepcion', { error: errStr(e2) }); }
+            }
+            // Si barre algo, algun efecto no se limpio solo: queda en el log siempre.
+            AW.log(ids.length ? 'barrido_error_restos' : 'barrido', { planetas: planetIds, borrados: ids.length });
+        });
+    };
+
+    // Lluvia (tambien ventarron y x15) -> su virga equivalente: mismo indice =
+    // misma direccion y fuerza de viento. Nieve y lava: null (se apagan).
+    reg.aVirga = function (pfx) {
+        if (!pfx || !/\/lluvia_(viento|ventarron)(_x15)?_var\d+\.pfx$/.test(pfx)) { return null; }
+        var v = pfx.replace(/lluvia_(viento|ventarron)(_x15)?_var/, 'virga_viento$2_var');
+        var m = /_var(\d+)\.pfx$/.exec(v), fam = /\/(virga_viento(_x15)?)_var/.exec(v);
+        return m && fam && Number(m[1]) <= reg.cuantas(fam[1]) ? v : null;
     };
 
     // worldview.movePuppet acepta arrays (worldview.js): todos los movimientos
@@ -307,6 +459,21 @@
             for (i = 0; i < planetas.length; i++) { planetas[i].presupuesto *= f; }
         }
         AW.log('presupuesto', { planetas: planetas.length, total: Math.round(Math.min(total, cfg.PART_GLOBAL)) });
+
+        // Tope por CAPACIDAD DE CREACION: cada cuerpo de nube pide un puppet
+        // nuevo cada (NUBE_GEN_S - GEN_ANTICIPO_S) s. Si todos los planetas
+        // juntos piden mas de lo que la cola crea (CREAR_POR_CICLO / DRIFT_S), la
+        // cola se satura y la lluvia nunca nace (2026-09-24: 7 planetas en
+        // Extreme). Todos bajan parejo: menos nubes, pero completas.
+        var porS = cfg.CREAR_POR_CICLO / cfg.DRIFT_S;
+        var tope = porS * Math.max(1, cfg.NUBE_GEN_S - cfg.GEN_ANTICIPO_S) * cfg.CAPACIDAD_USO;
+        var base = 0;
+        for (i = 0; i < planetas.length; i++) { if (planetas[i].maxCuerposBase) { base += planetas[i].maxCuerposBase; } }
+        var fc = base > tope ? tope / base : 1;
+        for (i = 0; i < planetas.length; i++) {
+            if (planetas[i].maxCuerposBase) { planetas[i].factorCap = fc; planetas[i].aplicarCalidad(); }
+        }
+        AW.log('capacidad', { cuerposPedidos: base, tope: Math.round(tope), factor: Math.round(fc * 100) / 100 });
     };
 
     // Valor del nivel de calidad elegido para un efecto (cfg.NIVELES).

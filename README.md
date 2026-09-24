@@ -74,6 +74,12 @@ Changing one sets the general detail to *Custom*.
 If something breaks after changing advanced options, press **Restore tab
 defaults** in the settings menu.
 
+**Default values are open to suggestions.** The defaults aim for a good balance
+between realism and performance on most computers. If you think a default
+should change (more or fewer clouds, more rain, faster wind...), tell us in
+[Discussions](https://github.com/pablohenriquez93k-glitch/atmosphere-weather/discussions):
+every suggestion is welcome.
+
 ## Languages
 
 The settings menu is translated into every language of the game. Translations
