@@ -25,7 +25,7 @@
         var extremo = ['quality'].concat(O.POR_EFECTO).map(function (k) { return valor(k) + ' === \'extreme\''; }).join(' || ');
         var AVISO = 'style="color:salmon; margin:0 0 10px;"'; // mismo color que .warning de la pestaña Server
         var NOTA = 'style="opacity:0.7; margin:0 0 10px;"';
-        // Nota destacada (pedido de Pablo): invitacion a sugerir valores por defecto.
+        // Nota destacada: invitacion a sugerir valores por defecto.
         var DESTACADA = 'style="font-size:16px; color:#8fd3ff; margin:4px 0 14px;"';
         var FILA = 'class="sub-group top" style="flex-wrap:wrap; min-height:0;"';
         // El nombre del boton sale de la traduccion oficial del juego, en mayusculas como en pantalla.
@@ -57,7 +57,7 @@
             return h + '</div>';
         }).join('');
 
-        // Traduccion hecha con IA sin revision nativa: aviso arriba de todo (pedido de Pablo).
+        // Traduccion hecha con IA sin revision nativa: aviso arriba de todo.
         if (O.idiomaSinRevisar) { html = texto(L(O.AVISO_TRADUCCION), AVISO) + html; }
 
         $('.container_settings').append(

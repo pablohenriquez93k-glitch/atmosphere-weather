@@ -141,7 +141,7 @@
 
     // Reparto parejo: por turnos, una tarea de cada planeta. En FIFO puro, con
     // muchos planetas los primeros llenaban la cola al arrancar y los ultimos
-    // esperaban minutos sus nubes (Pablo, 12 planetas, 2026-09-24). Dentro de
+    // esperaban minutos sus nubes (visto con 12 planetas). Dentro de
     // cada planeta, la reserva de rayos va al final: solo se usa si hay tormenta.
     // Prioridad dentro de cada planeta (2026-09-24: con la cola saturada, los
     // relevos de nubes tapaban la lluvia y no llovia en ningun planeta):
@@ -206,7 +206,7 @@
     // ---------------- despedida: planeta destruido ----------------
     // La onda de choque arrastra la atmosfera: nubes y plumas se ESTIRAN y se
     // alejan; la lluvia se EVAPORA (pasa a virga); el resto se apaga en tandas.
-    // Todo en cfg.MUERTE_S como maximo (Pablo). Fuera del ciclo: evento raro, y
+    // Todo en cfg.MUERTE_S como maximo. Fuera del ciclo: evento raro, y
     // la primera parte debe salir junto con la explosion.
     // item = { pid, loc (location completa), modo: 'estirar' | 'evaporar', fx }
     var despedida = [];
@@ -278,7 +278,7 @@
         AW.log('despedida', { estirados: est.length, evaporados: eva.length, apagados: resto.length });
     };
 
-    // SEGURO UNIVERSAL anti explosion (pedido de Pablo): despues de la
+    // SEGURO UNIVERSAL anti explosion: despues de la
     // despedida, todo puppet NUESTRO (ruta de nuestros .pfx) que siga en un
     // planeta muerto se borra, sea del efecto que sea. Cubre efectos futuros
     // que olviden su propia limpieza y cualquier caso raro del motor.

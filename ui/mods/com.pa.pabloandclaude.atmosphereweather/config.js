@@ -62,12 +62,12 @@ AW.cfg = {
     // Linea de nieve segun la temperatura del planeta (editor 0-100). El terreno
     // Earth pone hielo donde la temperatura local es baja (pa/terrain/earth.json,
     // sub-bioma ice); el motor la calcula en C++. Calibrado a ojo con el editor
-    // (Pablo, 2026-09-24): [temperatura, latitud desde la que nieva].
+    // de sistemas: [temperatura, latitud desde la que nieva].
     NIEVE_POR_TEMP: [[0, 0], [15, 19], [32, 37], [45, 60], [61, 88], [65, 91]],
     // Franja SECA (sub-bioma desert de earth.json, temperatura local alta): con
     // los mismos datos la nieve empieza a ~1.3 x temp grados; el desierto cubre
     // |lat| < 1.3 x temp - 44 (HSO 50 -> 21, Augur 61 -> 35, 32 -> nada). Ahi
-    // se usa el clima de BIOMAS.desert: casi no llueve y mucho es virga (Pablo).
+    // se usa el clima de BIOMAS.desert: casi no llueve y mucho es virga.
     SECA_K: 1.3,
     SECA_OFFSET: 44,
     ESTRATO_LAT: [40, 65],
@@ -147,8 +147,8 @@ AW.cfg = {
     CAPACIDAD_USO: 0.7,
     MUERTE_S: 10,
     MUERTE_TANDAS: 5,          // borrado en tandas al azar (se va por partes, no de golpe)
-    MUERTE_ESTIRA: [3.0, 0.4, 1.6],   // aprobado por Pablo (2026-09-24)
-    MUERTE_EMPUJE: 1.09,              // Pablo: 1.35 alejaba demasiado -> alejamiento / 4
+    MUERTE_ESTIRA: [3.0, 0.4, 1.6],   // aprobado en prueba en juego
+    MUERTE_EMPUJE: 1.09,              // 1.35 alejaba demasiado -> alejamiento / 4
     VIGIA_S: 600,              // 0 = apagado. Cada 10 s daba picos de frametime (getAllPuppets); va dentro del ciclo
 
     // Precalentamiento: el clima corre en silencio antes de mostrar nada.

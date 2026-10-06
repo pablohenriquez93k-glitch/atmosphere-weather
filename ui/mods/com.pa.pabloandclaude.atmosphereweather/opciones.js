@@ -18,7 +18,7 @@
     // la scene settings: nuestros scripts corren antes de ko.applyBindings.
     var L = function (s) { return '!LOC:' + s; };
     // Idiomas revisados por un hablante nativo (el resto muestra el aviso).
-    var VERIFICADOS = ['es-ES'];   // revisado por Pablo en juego (2026-09-23)
+    var VERIFICADOS = ['es-ES'];   // revisado por hablante nativo en juego
     var ALIAS = { 'zh-HK': 'zh-TW' };   // chino tradicional
     function cargarTraduccion() {
         try {
@@ -61,7 +61,7 @@
     function onOff(title) { return sel(title, ['on', 'off'], [L('On'), L('Off')], 'on'); }
     // Deslizador (como "Icon display distance" de Gameplay). El vanilla no
     // muestra el numero: settings.js agrega la lectura "valor/divisor + sufijo
-    // + palabra traducida". Toda lectura lleva unidad legible (pedido de Pablo).
+    // + palabra traducida". Toda lectura lleva unidad legible.
     function desliz(title, min, max, step, def, sufijo, divisor, palabra) {
         return { title: L(title), type: 'slider', options: { min: min, max: max, step: step }, default: def,
             sufijo: sufijo, divisor: divisor || 1, palabra: palabra || '' };
@@ -147,7 +147,7 @@
         // Idioma cargado (null = ingles o sin archivo) y si falta revision nativa.
         idioma: null,
         idiomaSinRevisar: false,
-        // Pedido de Pablo: avisar en un lugar visible que las traducciones no
+        // Avisar en un lugar visible que las traducciones no
         // revisadas por hablantes nativos pueden tener errores (arriba de la pestaña).
         AVISO_TRADUCCION: 'This translation was made with AI and has not been reviewed by a native speaker, so it may contain translation errors. Please report them on the mod page.',
         // Estructura de la pestaña (settings.js). Textos = claves en ingles (loc).
