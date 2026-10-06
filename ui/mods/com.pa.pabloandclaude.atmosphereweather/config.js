@@ -2,7 +2,7 @@
 // Los .pfx, variantes.json y parametros.json salen de scripts/generar_pfx.py (repo).
 var AW = window.AtmosphereWeather = window.AtmosphereWeather || {};
 
-AW.VERSION = '1.0.1';   // = "version" de modinfo.json
+AW.VERSION = '1.0.2';   // = "version" de modinfo.json
 
 AW.cfg = {
     SPEC_DIR: '/pa/effects/specs/atmosphereweather/',
